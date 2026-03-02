@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,21 @@
     <title>Monitor ONU - Inteligencia Geopolítica</title>
     <style>
         :root {
-            --bg-body: #0f172a;       /* Slate 900 */
-            --bg-card: #1e293b;       /* Slate 800 */
-            --text-main: #f1f5f9;     /* Slate 100 */
-            --text-muted: #94a3b8;    /* Slate 400 */
-            --border: #334155;        /* Slate 700 */
-            --accent: #38bdf8;        /* Sky 400 */
+            --bg-body: #0f172a;
+            /* Slate 900 */
+            --bg-card: #1e293b;
+            /* Slate 800 */
+            --text-main: #f1f5f9;
+            /* Slate 100 */
+            --text-muted: #94a3b8;
+            /* Slate 400 */
+            --border: #334155;
+            /* Slate 700 */
+            --accent: #38bdf8;
+            /* Sky 400 */
             --accent-glow: rgba(56, 189, 248, 0.15);
-            --success: #34d399;       /* Emerald 400 */
+            --success: #34d399;
+            /* Emerald 400 */
             --font-main: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
         }
 
@@ -80,7 +88,9 @@
         .report-card::before {
             content: "";
             position: absolute;
-            left: 0; top: 0; bottom: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
             width: 4px;
             background: var(--accent);
             opacity: 0.8;
@@ -111,7 +121,7 @@
             display: flex;
             align-items: center;
         }
-        
+
         .content h3::before {
             content: "▹";
             margin-right: 8px;
@@ -123,36 +133,66 @@
             margin-bottom: 16px;
         }
 
+        .content a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .content a:hover {
+            color: #bae6fd;
+            text-decoration: underline;
+        }
+
         .content strong {
-            color: var(--success); /* Resalta datos clave en verde */
+            color: var(--success);
+            /* Resalta datos clave en verde */
             font-weight: 600;
         }
-        
+
         /* Diagnóstico final destacado */
         .content p:last-child strong {
-            color: #fbbf24; /* Amber para la conclusion */
+            color: #fbbf24;
+            /* Amber para la conclusion */
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Mobile */
         @media (max-width: 600px) {
-            body { padding: 12px; }
-            .header h1 { font-size: 1.5rem; }
-            .report-card { padding: 20px; border-radius: 12px; }
+            body {
+                padding: 12px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .report-card {
+                padding: 20px;
+                border-radius: 12px;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1>Monitor ONU 2026</h1>
             <p>Análisis de Riesgos Geopolíticos &amp; Tecnológicos Estratégicos</p>
         </div>
-        
+
         <div id="archive">
             <!-- MR_REPORTS_START -->
 
@@ -161,38 +201,90 @@
                 <div class="timestamp">REPORTE GENERADO: 02-Mar-2026 17:16 UTC</div>
                 <div class="content">
                     <div class="report-section">
-  <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
-  <p><strong>Medio Oriente (Escalada Crítica):</strong> Durante las últimas 12 horas de este 2 de marzo de 2026, se ha abierto un nuevo frente de guerra a gran escala. Hezbolá ha lanzado ataques masivos con misiles y drones contra Israel en represalia por el asesinato del líder supremo de Irán, Alí Jamenei, ocurrido el fin de semana. Israel ha respondido con bombardeos sobre Beirut y el sur de Líbano. Paralelamente, la Media Luna Roja iraní reporta más de 550 muertos tras la "Operación Epic Fury", una campaña de ataques conjuntos de EE. UU. e Israel en más de 130 ciudades iraníes. En medio del caos operativo, las defensas aéreas de Kuwait derribaron por error tres cazas F-15 estadounidenses (los pilotos lograron eyectarse y sobrevivir).</p>
-  <p><strong>Guerra Rusia-Ucrania:</strong> Tras cumplirse el cuarto aniversario de la invasión a finales de febrero de 2026, el conflicto se mantiene en una guerra de trincheras altamente tecnológica. Las recientes conversaciones de paz en Ginebra han concluido sin avances significativos, mientras los ataques con drones de visión en primera persona (FPV) continúan paralizando los movimientos de blindados pesados en el frente, convirtiendo la "tierra de nadie" en zonas de aniquilación automatizada.</p>
-  
-  <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
-  <ul>
-    <li><strong>Drones FPV de Fibra Óptica:</strong> Ingenieros ucranianos han introducido en el campo de batalla drones kamikaze conectados por un cable de fibra óptica de hasta 20 kilómetros. Esta táctica anula por completo los sistemas de Guerra Electrónica (EW) e interferencia de radio rusos, garantizando un control ininterrumpido y una calidad de video perfecta hasta el impacto.</li>
-    <li><strong>Enjambres Autónomos (Swarming):</strong> Tanto Rusia como Ucrania están desplegando tácticas de enjambre impulsadas por IA, donde un dron actúa como "vigía" y comparte datos en tiempo real con el resto del grupo. Si un dron detecta defensas antiaéreas, el enjambre toma acciones evasivas de forma autónoma para asegurar la penetración del objetivo.</li>
-    <li><strong>Drones Suicidas de Bajo Coste (EE. UU.):</strong> En los ataques de las últimas horas sobre Irán, Estados Unidos ha utilizado por primera vez en combate drones de ataque unidireccional de bajo coste, modelados a partir de diseños iraníes, combinándolos en operaciones conjuntas con misiles Tomahawk y bombarderos furtivos B-2.</li>
-  </ul>
-  
-  <h3>Actores al Margen de la Ley</h3>
-  <p>Los cárteles mexicanos han incrementado drásticamente el uso de armamento novedoso en la frontera con Estados Unidos. Reportes recientes de febrero de 2026 destacan incidentes graves en el espacio aéreo de El Paso (Texas) provocados por incursiones de drones de los cárteles. Estos grupos criminales están combinando drones comerciales adquiridos en el mercado negro con inteligencia artificial para realizar labores de reconocimiento, contrabando de fentanilo y, cada vez más, para lanzar artefactos explosivos improvisados (IEDs) contra cárteles rivales y fuerzas de seguridad. Por otro lado, en Medio Oriente, grupos como Hezbolá continúan utilizando tácticas de saturación con drones modificados para evadir los sistemas de defensa aérea de Israel y bases de la coalición.</p>
-  
-  <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
-  <p>El reciente ataque de Estados Unidos contra instalaciones en Irán ha servido como un laboratorio de guerra en tiempo real. El ejército estadounidense ha probado en combate, de forma no declarada previamente en su doctrina oficial, drones suicidas experimentales de bajo coste creados mediante ingeniería inversa a partir de tecnología iraní. Además, los incidentes fronterizos en Texas han revelado que el Pentágono está realizando pruebas operativas de nuevas tecnologías experimentales contra-drones (C-UAS) en zonas civiles para intentar neutralizar las incursiones aéreas de los cárteles mexicanos, lo que ha generado fricciones sobre el control del espacio aéreo.</p>
-  
-  <h3>Fuentes Consultadas</h3>
-  <ul>
-    <li><a href="https://www.theguardian.com/world/live/2026/mar/02/middle-east-crisis-live-israel-iran-hezbollah-us">The Guardian: Middle East crisis live: Israel launches new attacks on 'heart of Tehran'; US fighter planes mistakenly shot down in Kuwait</a></li>
-    <li><a href="https://www.kyivpost.com/post/43210">Kyiv Post: Ukraine's Revolutionary Fiber-Optic Drone: An Electronic Warfare Game-Changer</a></li>
-    <li><a href="https://www.forbes.com/sites/vikrammittal/2025/01/02/swarming-drones-will-be-on-the-russian-ukrainian-battlefield-in-2025/">Forbes: Swarming Drones Will Be On The Russian-Ukrainian Battlefield In 2025</a></li>
-    <li><a href="https://mexc.co/us-uses-anthropic-ai-b-2-bombers-and-suicide-drones-in-iran-strikes/">MEXC News: US uses Anthropic AI, B-2 bombers and suicide drones in Iran strikes</a></li>
-    <li><a href="https://www.theguardian.com/world/2026/feb/11/mexico-cartels-drones-el-paso-texas">The Guardian: Alleged drones in El Paso airspace cast spotlight on Mexican cartels' growing arsenals</a></li>
-  </ul>
-</div>
+                        <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
+                        <p><strong>Medio Oriente (Escalada Crítica):</strong> Durante las últimas 12 horas de este 2 de
+                            marzo de 2026, se ha abierto un nuevo frente de guerra a gran escala. Hezbolá ha lanzado
+                            ataques masivos con misiles y drones contra Israel en represalia por el asesinato del líder
+                            supremo de Irán, Alí Jamenei, ocurrido el fin de semana. Israel ha respondido con bombardeos
+                            sobre Beirut y el sur de Líbano. Paralelamente, la Media Luna Roja iraní reporta más de 550
+                            muertos tras la "Operación Epic Fury", una campaña de ataques conjuntos de EE. UU. e Israel
+                            en más de 130 ciudades iraníes. En medio del caos operativo, las defensas aéreas de Kuwait
+                            derribaron por error tres cazas F-15 estadounidenses (los pilotos lograron eyectarse y
+                            sobrevivir).</p>
+                        <p><strong>Guerra Rusia-Ucrania:</strong> Tras cumplirse el cuarto aniversario de la invasión a
+                            finales de febrero de 2026, el conflicto se mantiene en una guerra de trincheras altamente
+                            tecnológica. Las recientes conversaciones de paz en Ginebra han concluido sin avances
+                            significativos, mientras los ataques con drones de visión en primera persona (FPV) continúan
+                            paralizando los movimientos de blindados pesados en el frente, convirtiendo la "tierra de
+                            nadie" en zonas de aniquilación automatizada.</p>
+
+                        <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
+                        <ul>
+                            <li><strong>Drones FPV de Fibra Óptica:</strong> Ingenieros ucranianos han introducido en el
+                                campo de batalla drones kamikaze conectados por un cable de fibra óptica de hasta 20
+                                kilómetros. Esta táctica anula por completo los sistemas de Guerra Electrónica (EW) e
+                                interferencia de radio rusos, garantizando un control ininterrumpido y una calidad de
+                                video perfecta hasta el impacto.</li>
+                            <li><strong>Enjambres Autónomos (Swarming):</strong> Tanto Rusia como Ucrania están
+                                desplegando tácticas de enjambre impulsadas por IA, donde un dron actúa como "vigía" y
+                                comparte datos en tiempo real con el resto del grupo. Si un dron detecta defensas
+                                antiaéreas, el enjambre toma acciones evasivas de forma autónoma para asegurar la
+                                penetración del objetivo.</li>
+                            <li><strong>Drones Suicidas de Bajo Coste (EE. UU.):</strong> En los ataques de las últimas
+                                horas sobre Irán, Estados Unidos ha utilizado por primera vez en combate drones de
+                                ataque unidireccional de bajo coste, modelados a partir de diseños iraníes,
+                                combinándolos en operaciones conjuntas con misiles Tomahawk y bombarderos furtivos B-2.
+                            </li>
+                        </ul>
+
+                        <h3>Actores al Margen de la Ley</h3>
+                        <p>Los cárteles mexicanos han incrementado drásticamente el uso de armamento novedoso en la
+                            frontera con Estados Unidos. Reportes recientes de febrero de 2026 destacan incidentes
+                            graves en el espacio aéreo de El Paso (Texas) provocados por incursiones de drones de los
+                            cárteles. Estos grupos criminales están combinando drones comerciales adquiridos en el
+                            mercado negro con inteligencia artificial para realizar labores de reconocimiento,
+                            contrabando de fentanilo y, cada vez más, para lanzar artefactos explosivos improvisados
+                            (IEDs) contra cárteles rivales y fuerzas de seguridad. Por otro lado, en Medio Oriente,
+                            grupos como Hezbolá continúan utilizando tácticas de saturación con drones modificados para
+                            evadir los sistemas de defensa aérea de Israel y bases de la coalición.</p>
+
+                        <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
+                        <p>El reciente ataque de Estados Unidos contra instalaciones en Irán ha servido como un
+                            laboratorio de guerra en tiempo real. El ejército estadounidense ha probado en combate, de
+                            forma no declarada previamente en su doctrina oficial, drones suicidas experimentales de
+                            bajo coste creados mediante ingeniería inversa a partir de tecnología iraní. Además, los
+                            incidentes fronterizos en Texas han revelado que el Pentágono está realizando pruebas
+                            operativas de nuevas tecnologías experimentales contra-drones (C-UAS) en zonas civiles para
+                            intentar neutralizar las incursiones aéreas de los cárteles mexicanos, lo que ha generado
+                            fricciones sobre el control del espacio aéreo.</p>
+
+                        <h3>Fuentes Consultadas</h3>
+                        <ul>
+                            <li><a
+                                    href="https://www.theguardian.com/world/live/2026/mar/02/middle-east-crisis-live-israel-iran-hezbollah-us">The
+                                    Guardian: Middle East crisis live: Israel launches new attacks on 'heart of Tehran';
+                                    US fighter planes mistakenly shot down in Kuwait</a></li>
+                            <li><a href="https://www.kyivpost.com/post/43210">Kyiv Post: Ukraine's Revolutionary
+                                    Fiber-Optic Drone: An Electronic Warfare Game-Changer</a></li>
+                            <li><a
+                                    href="https://www.forbes.com/sites/vikrammittal/2025/01/02/swarming-drones-will-be-on-the-russian-ukrainian-battlefield-in-2025/">Forbes:
+                                    Swarming Drones Will Be On The Russian-Ukrainian Battlefield In 2025</a></li>
+                            <li><a
+                                    href="https://mexc.co/us-uses-anthropic-ai-b-2-bombers-and-suicide-drones-in-iran-strikes/">MEXC
+                                    News: US uses Anthropic AI, B-2 bombers and suicide drones in Iran strikes</a></li>
+                            <li><a
+                                    href="https://www.theguardian.com/world/2026/feb/11/mexico-cartels-drones-el-paso-texas">The
+                                    Guardian: Alleged drones in El Paso airspace cast spotlight on Mexican cartels'
+                                    growing arsenals</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- MR_REPORT_CARD_END -->
-    
+
             <!-- MR_REPORTS_END -->
         </div>
     </div>
 </body>
+
 </html>

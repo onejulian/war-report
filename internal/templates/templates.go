@@ -125,6 +125,17 @@ const BaseHTML = `<!DOCTYPE html>
             margin-bottom: 16px;
         }
 
+        .content a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .content a:hover {
+            color: #bae6fd; 
+            text-decoration: underline;
+        }
+
         .content strong {
             color: var(--success); /* Resalta datos clave en verde */
             font-weight: 600;

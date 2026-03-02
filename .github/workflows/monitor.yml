@@ -1,4 +1,4 @@
-name: Auto UN Report
+name: Auto WAR Report
 
 on:
   schedule:
