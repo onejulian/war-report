@@ -6,7 +6,7 @@ const BaseHTML = `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0f172a">
-    <title>Monitor ONU - Inteligencia Geopolítica</title>
+    <title>WAR Monitor - Inteligencia Geopolítica</title>
     <style>
         :root {
             --bg-body: #0f172a;       /* Slate 900 */
@@ -162,7 +162,7 @@ const BaseHTML = `<!DOCTYPE html>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Monitor ONU {current_year}</h1>
+            <h1>WAR Monitor {current_year}</h1>
             <p>Análisis de Riesgos Geopolíticos &amp; Tecnológicos Estratégicos</p>
         </div>
         
