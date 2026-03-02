@@ -1,0 +1,37 @@
+# Archivos ejecutables compilados
+
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+main
+
+# Archivos de pruebas y reportes de cobertura
+
+*.test
+*.out
+
+# Espacios de trabajo locales de Go
+
+go.work
+go.work.sum
+
+# Variables de entorno y secretos
+
+.env
+
+# Archivos generados por el sistema operativo
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+
+# Configuraciones de editores de código e IDEs
+
+.vscode/
+.idea/
+*.swp
+*.swo

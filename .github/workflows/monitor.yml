@@ -1,0 +1,40 @@
+name: Auto UN Report
+
+on:
+  schedule:
+    # Se ejecuta cada 24 horas
+    - cron: '0 */12 * * *'
+  
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-analysis:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Descargar dependencias
+        run: go mod download
+
+      - name: Ejecutar Agente IA
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: go run main.go
+
+      - name: Guardar cambios (Commit & Push)
+        run: |
+          git config --global user.name 'onejulian'
+          git config --global user.email 'onejulian2014@gmail.com'
+          git add index.html
+          # El commit solo se hace si hubo cambios reales
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Nuevo reporte generado" && git push)
