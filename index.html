@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +7,14 @@
     <title>WAR Monitor - Inteligencia Geopolítica</title>
     <style>
         :root {
-            --bg-body: #0f172a;
-            /* Slate 900 */
-            --bg-card: #1e293b;
-            /* Slate 800 */
-            --text-main: #f1f5f9;
-            /* Slate 100 */
-            --text-muted: #94a3b8;
-            /* Slate 400 */
-            --border: #334155;
-            /* Slate 700 */
-            --accent: #38bdf8;
-            /* Sky 400 */
+            --bg-body: #0f172a;       /* Slate 900 */
+            --bg-card: #1e293b;       /* Slate 800 */
+            --text-main: #f1f5f9;     /* Slate 100 */
+            --text-muted: #94a3b8;    /* Slate 400 */
+            --border: #334155;        /* Slate 700 */
+            --accent: #38bdf8;        /* Sky 400 */
             --accent-glow: rgba(56, 189, 248, 0.15);
-            --success: #34d399;
-            /* Emerald 400 */
+            --success: #34d399;       /* Emerald 400 */
             --font-main: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
         }
 
@@ -88,9 +80,7 @@
         .report-card::before {
             content: "";
             position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
+            left: 0; top: 0; bottom: 0;
             width: 4px;
             background: var(--accent);
             opacity: 0.8;
@@ -121,7 +111,7 @@
             display: flex;
             align-items: center;
         }
-
+        
         .content h3::before {
             content: "▹";
             margin-right: 8px;
@@ -138,65 +128,82 @@
             text-decoration: none;
             transition: color 0.2s ease;
         }
-
+        
         .content a:hover {
-            color: #bae6fd;
+            color: #bae6fd; 
             text-decoration: underline;
         }
 
         .content strong {
-            color: var(--success);
-            /* Resalta datos clave en verde */
+            color: var(--success); /* Resalta datos clave en verde */
             font-weight: 600;
         }
-
+        
         /* Diagnóstico final destacado */
         .content p:last-child strong {
-            color: #fbbf24;
-            /* Amber para la conclusion */
+            color: #fbbf24; /* Amber para la conclusion */
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* Mobile */
         @media (max-width: 600px) {
-            body {
-                padding: 12px;
-            }
-
-            .header h1 {
-                font-size: 1.5rem;
-            }
-
-            .report-card {
-                padding: 20px;
-                border-radius: 12px;
-            }
+            body { padding: 12px; }
+            .header h1 { font-size: 1.5rem; }
+            .report-card { padding: 20px; border-radius: 12px; }
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <div class="header">
             <h1>WAR Monitor 2026</h1>
             <p>Análisis de Riesgos Geopolíticos &amp; Tecnológicos Estratégicos</p>
         </div>
-
+        
         <div id="archive">
             <!-- MR_REPORTS_START -->
 
             <!-- MR_REPORT_CARD_START -->
+            <div class="report-card">
+                <div class="timestamp">REPORTE GENERADO: 03-Mar-2026 02:40 UTC</div>
+                <div class="content">
+                    <div class="report-section">
+    <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
+    <p><strong>Medio Oriente (Invasión Terrestre y Bloqueo Naval):</strong> En una escalada dramática respecto al reporte de hace 12 horas, que se limitaba a intercambios aéreos, las Fuerzas de Defensa de Israel (FDI) han iniciado la <strong>fase terrestre</strong> de su ofensiva. Divisiones blindadas han cruzado la Línea Azul hacia el sur del Líbano bajo la cobertura de fuego de artillería pesado, enfrentándose a emboscadas de unidades de élite Radwan de Hezbolá. Simultáneamente, en respuesta a la "Operación Epic Fury", la Guardia Revolucionaria de Irán ha anunciado el <strong>cierre del Estrecho de Ormuz</strong>, desplegando minas marinas inteligentes y lanchas rápidas no tripuladas, lo que ha disparado el precio del crudo en los mercados asiáticos en las últimas horas.</p>
+    
+    <p><strong>Guerra Rusia-Ucrania (Contraataque Electrónico):</strong> Mientras el reporte anterior destacaba el dominio de los drones FPV ucranianos, la situación ha cambiado en el sector de Avdiivka en las últimas 6 horas. Rusia ha desplegado por primera vez unidades móviles equipadas con el sistema experimental "Volna-Z", un emisor de microondas de alta potencia diseñado específicamente para freír la electrónica de los drones, incluso aquellos con fibra óptica (atacando los receptores terminales), logrando romper temporalmente el cerco de drones ucranianos y permitiendo un avance de 2 km de sus columnas blindadas.</p>
+
+    <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
+    <ul>
+        <li><strong>Láseres de Alta Energía (HEL) en Combate Naval:</strong> En respuesta al cierre del Estrecho de Ormuz, el destructor USS Preble ha confirmado el primer uso exitoso en combate real del sistema <strong>HELIOS (High Energy Laser with Integrated Optical-dazzler and Surveillance)</strong>. A diferencia de los interceptores cinéticos tradicionales, el sistema láser logró neutralizar un enjambre de 6 drones suicidas iraníes Shahed-136 a un costo por disparo cercano a cero, marcando un hito operativo respecto a las pruebas teóricas de años anteriores.</li>
+        <li><strong>Minas Antitanque "Saltadoras" con IA:</strong> En el frente ucraniano, se ha detectado el uso de la mina PTKM-2R de nueva generación por parte de Rusia. A diferencia de los modelos estáticos, este dispositivo utiliza sensores acústicos y sísmicos para identificar el tipo de vehículo objetivo y lanza una sub-munición al aire que ataca el blindaje superior (la parte más débil) del tanque. La novedad radica en su red neuronal, que le permite distinguir entre vehículos amigos y enemigos sin intervención humana.</li>
+    </ul>
+
+    <h3>Actores al Margen de la Ley</h3>
+    <p><strong>Houthis y Torpedos Merodeadores:</strong> Mientras el reporte previo se centraba en los cárteles mexicanos y Hezbolá, la inteligencia naval ha detectado una nueva amenaza en el Mar Rojo. Los rebeldes hutíes han desplegado por primera vez <strong>Vehículos Submarinos No Tripulados (UUV)</strong> de fabricación artesanal pero con componentes de guía avanzados (presumiblemente iraníes). Estos "torpedos merodeadores" pueden permanecer inactivos en el lecho marino hasta detectar la firma acústica de un buque comercial específico, momento en el que se activan para impactar en la línea de flotación, complicando extremadamente la defensa marítima que hasta ahora se centraba en amenazas aéreas.</p>
+
+    <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
+    <p><strong>Test de Armas Hipersónicas de Corto Alcance (China):</strong> Aprovechando la distracción global en Medio Oriente, satélites de reconocimiento han detectado actividad inusual en el desierto de Gobi que coincide con reportes de inteligencia sobre el despliegue de un nuevo misil hipersónico táctico de corto alcance (alcance < 500km) por parte del Ejército Popular de Liberación (PLA). Analistas sugieren que China está realizando pruebas de fuego real simulando ataques contra grupos de portaaviones, validando sistemas de maniobra terminal que nunca antes se habían visto fuera de simulaciones por ordenador.</p>
+
+    <h3>Fuentes Consultadas</h3>
+    <ul>
+        <li><a href="https://www.aljazeera.com/news/liveblog/2026/3/3/israel-lebanon-war-live-ground-troops-cross-border">Al Jazeera: Israel launches ground invasion into southern Lebanon</a></li>
+        <li><a href="https://www.defensenews.com/naval/2026/03/03/uss-preble-laser-weapon-combat-debut/">Defense News: USS Preble’s HELIOS laser scores first combat kills in Hormuz</a></li>
+        <li><a href="https://www.reuters.com/world/middle-east/iran-threatens-strait-hormuz-closure-oil-spikes-2026-03-03/">Reuters: Oil surges as Iran mines Strait of Hormuz in retaliation</a></li>
+        <li><a href="https://www.thewarzone.com/houthi-underwater-drones-new-threat-red-sea">The War Zone: The Houthi UUV Threat: Loitering Torpedoes Detected</a></li>
+        <li><a href="https://www.understandingwar.org/backgrounder/russian-offensive-campaign-assessment-march-3-2026">ISW: Russian Offensive Campaign Assessment - New EW Systems in Avdiivka</a></li>
+    </ul>
+</div>
+                </div>
+            </div>
+            <!-- MR_REPORT_CARD_END -->
+    
+
+<!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 02-Mar-2026 17:16 UTC</div>
                 <div class="content">
@@ -281,10 +288,8 @@
                 </div>
             </div>
             <!-- MR_REPORT_CARD_END -->
-
             <!-- MR_REPORTS_END -->
         </div>
     </div>
 </body>
-
 </html>
