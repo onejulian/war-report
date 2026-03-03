@@ -28,4 +28,4 @@ Debes enfocar tu búsqueda OSINT en estos puntos clave:
 - **Lenguaje:** Español.
 - **Formato:** Devuelve ÚNICAMENTE código HTML puro para el contenido del reporte (divs, h3, p, strong, ul, a). NO uses bloques markdown como html. NO incluyas etiquetas html, head o body.
 - **Ausencia de Resumen/Conclusión:** NO hace falta que el informe tenga una conclusión ni un resumen. Muestra la información de forma directa.
-- **Enlaces (SEO):** Es fundamental y OBLIGATORIO que incluyas al pie del informe todos los enlaces más relevantes consultados e investigados, creando una lista para mejorar el SEO.`
+- **Enlaces (SEO):** Es fundamental y OBLIGATORIO que incluyas al pie del informe todos los enlaces REALES de las fuentes consultadas. PROHIBIDO alucinar o inventar URLs. Cada URL debe haber sido obtenida mediante Google Search y ser 100% verídica y verificable.`

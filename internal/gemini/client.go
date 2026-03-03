@@ -92,8 +92,8 @@ func GetAnalysis(ctx context.Context, previousReport string) (string, error) {
       
       <h3>Fuentes Consultadas</h3>
       <ul>
-        <!-- Rellena esta lista con todos los enlaces relevantes utilizados en tu investigación -->
-        <li><a href="[URL]">Título del Artículo o Fuente</a></li>
+        <!-- IMPORTANTE: Rellena esta lista ÚNICAMENTE con enlaces REALES obtenidos en tu búsqueda. PROHIBIDO INVENTAR URLs. SI NO ESTÁS SEGURO DE UN ENLACE, NO LO INCLUYAS. -->
+        <li><a href="URL_REAL_OBTENIDA_EN_BUSQUEDA">Título de la Fuente Verificada</a></li>
       </ul>
     </div>
     `, nowStr, previousContext)
