@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,21 @@
     <title>WAR Monitor - Inteligencia Geopolítica</title>
     <style>
         :root {
-            --bg-body: #0f172a;       /* Slate 900 */
-            --bg-card: #1e293b;       /* Slate 800 */
-            --text-main: #f1f5f9;     /* Slate 100 */
-            --text-muted: #94a3b8;    /* Slate 400 */
-            --border: #334155;        /* Slate 700 */
-            --accent: #38bdf8;        /* Sky 400 */
+            --bg-body: #0f172a;
+            /* Slate 900 */
+            --bg-card: #1e293b;
+            /* Slate 800 */
+            --text-main: #f1f5f9;
+            /* Slate 100 */
+            --text-muted: #94a3b8;
+            /* Slate 400 */
+            --border: #334155;
+            /* Slate 700 */
+            --accent: #38bdf8;
+            /* Sky 400 */
             --accent-glow: rgba(56, 189, 248, 0.15);
-            --success: #34d399;       /* Emerald 400 */
+            --success: #34d399;
+            /* Emerald 400 */
             --font-main: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
         }
 
@@ -80,7 +88,9 @@
         .report-card::before {
             content: "";
             position: absolute;
-            left: 0; top: 0; bottom: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
             width: 4px;
             background: var(--accent);
             opacity: 0.8;
@@ -111,7 +121,7 @@
             display: flex;
             align-items: center;
         }
-        
+
         .content h3::before {
             content: "▹";
             margin-right: 8px;
@@ -128,42 +138,61 @@
             text-decoration: none;
             transition: color 0.2s ease;
         }
-        
+
         .content a:hover {
-            color: #bae6fd; 
+            color: #bae6fd;
             text-decoration: underline;
         }
 
         .content strong {
-            color: var(--success); /* Resalta datos clave en verde */
+            color: var(--success);
+            /* Resalta datos clave en verde */
             font-weight: 600;
         }
-        
+
         /* Diagnóstico final destacado */
         .content p:last-child strong {
-            color: #fbbf24; /* Amber para la conclusion */
+            color: #fbbf24;
+            /* Amber para la conclusion */
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Mobile */
         @media (max-width: 600px) {
-            body { padding: 12px; }
-            .header h1 { font-size: 1.5rem; }
-            .report-card { padding: 20px; border-radius: 12px; }
+            body {
+                padding: 12px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .report-card {
+                padding: 20px;
+                border-radius: 12px;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1>WAR Monitor 2026</h1>
             <p>Análisis de Riesgos Geopolíticos &amp; Tecnológicos Estratégicos</p>
         </div>
-        
+
         <div id="archive">
             <!-- MR_REPORTS_START -->
 
@@ -172,303 +201,749 @@
                 <div class="timestamp">REPORTE GENERADO: 06-Mar-2026 13:08 UTC</div>
                 <div class="content">
                     <div class="report-section">
-  <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
-  <p><strong>Medio Oriente (Israel-Líbano):</strong> En comparativa con el reporte anterior, que destacaba la orden de evacuación sin precedentes en Beirut y los primeros combates terrestres, la situación ha entrado en una fase de destrucción masiva. En las últimas 12 horas, las Fuerzas de Defensa de Israel (FDI) han ejecutado una "ola de ataques a gran escala" (al menos 26 oleadas) contra los suburbios del sur de Beirut (Dahiyeh), destruyendo centros de mando y depósitos de drones de Hezbolá. La magnitud de la evacuación ha llevado al jefe de derechos humanos de la ONU, Volker Turk, a advertir que el desplazamiento de cientos de miles de personas plantea serias preocupaciones de "traslado forzoso" bajo el derecho internacional humanitario.</p>
-  
-  <p><strong>Guerra EE. UU./Israel - Irán (Operación Epic Fury):</strong> Si hace 12 horas reportábamos el uso de bombarderos B-2 y misiles PrSM, la novedad actual se centra en la sostenibilidad y el costo del conflicto, que entra en su sexto día. Análisis recientes del CSIS revelan que las primeras 100 horas de la operación han costado a EE. UU. aproximadamente 3.700 millones de dólares (casi 900 millones diarios). Ante las dudas sobre la viabilidad prolongada, el Secretario de Guerra de EE. UU., Pete Hegseth, confirmó desde el CENTCOM que poseen los recursos para sostener la campaña indefinidamente. Por su parte, Irán ha roto una pausa de 11 horas lanzando nuevas salvas de misiles balísticos hacia Tel Aviv y ha atacado un petrolero estadounidense cerca de las costas de Kuwait.</p>
+                        <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
+                        <p><strong>Medio Oriente (Israel-Líbano):</strong> En comparativa con el reporte anterior, que
+                            destacaba la orden de evacuación sin precedentes en Beirut y los primeros combates
+                            terrestres, la situación ha entrado en una fase de destrucción masiva. En las últimas 12
+                            horas, las Fuerzas de Defensa de Israel (FDI) han ejecutado una "ola de ataques a gran
+                            escala" (al menos 26 oleadas) contra los suburbios del sur de Beirut (Dahiyeh), destruyendo
+                            centros de mando y depósitos de drones de Hezbolá. La magnitud de la evacuación ha llevado
+                            al jefe de derechos humanos de la ONU, Volker Turk, a advertir que el desplazamiento de
+                            cientos de miles de personas plantea serias preocupaciones de "traslado forzoso" bajo el
+                            derecho internacional humanitario.</p>
 
-  <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
-  <ul>
-    <li><strong>Torreta Autónoma "Bullfrog" en Drones Marítimos:</strong> La empresa estadounidense Red Cat, en asociación con Allen Control Systems (ACS), ha integrado la torreta autónoma "Bullfrog" en los drones marítimos Variant 7 (la versión estadounidense del Magura V7 ucraniano). Esta torreta de 75 kg utiliza inteligencia artificial y visión por computadora para identificar, rastrear y derribar drones enemigos (como los Shahed) de forma totalmente autónoma utilizando una ametralladora M240. Esto transforma a los drones navales de armas suicidas de un solo uso a plataformas persistentes de defensa antiaérea móvil.</li>
-    <li><strong>Dron Kamikaze VIRTUS con Ojiva LION STRIKE 110:</strong> Las empresas alemanas TDW y STARK han completado con éxito pruebas de fuego real de este nuevo paquete de ataque integrado. El dron de despegue vertical VIRTUS, capaz de alcanzar velocidades de picado de 250 km/h, ha sido equipado con la ojiva modular LION STRIKE 110 (de carga hueca en tándem). Esta combinación está diseñada específicamente para penetrar el blindaje reactivo de los tanques principales de batalla modernos, ofreciendo a la OTAN una capacidad de ataque escalable y de alta velocidad.</li>
-  </ul>
+                        <p><strong>Guerra EE. UU./Israel - Irán (Operación Epic Fury):</strong> Si hace 12 horas
+                            reportábamos el uso de bombarderos B-2 y misiles PrSM, la novedad actual se centra en la
+                            sostenibilidad y el costo del conflicto, que entra en su sexto día. Análisis recientes del
+                            CSIS revelan que las primeras 100 horas de la operación han costado a EE. UU.
+                            aproximadamente 3.700 millones de dólares (casi 900 millones diarios). Ante las dudas sobre
+                            la viabilidad prolongada, el Secretario de Guerra de EE. UU., Pete Hegseth, confirmó desde
+                            el CENTCOM que poseen los recursos para sostener la campaña indefinidamente. Por su parte,
+                            Irán ha roto una pausa de 11 horas lanzando nuevas salvas de misiles balísticos hacia Tel
+                            Aviv y ha atacado un petrolero estadounidense cerca de las costas de Kuwait.</p>
 
-  <h3>Actores al Margen de la Ley</h3>
-  <p><strong>Guerra Psicológica y Táctica de Hezbolá:</strong> Más allá del uso de armamento cinético, Hezbolá ha implementado una nueva táctica de guerra psicológica y de información en las últimas horas. Imitando las estrategias de las FDI, el grupo ha comenzado a emitir sus propias "órdenes de evacuación" formales en idioma hebreo a través de sus canales de Telegram, exigiendo a los ciudadanos israelíes que residen a menos de 5 kilómetros de la frontera libanesa que abandonen sus hogares inmediatamente, justificándolo como represalia por la destrucción de la infraestructura civil en el Líbano.</p>
+                        <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
+                        <ul>
+                            <li><strong>Torreta Autónoma "Bullfrog" en Drones Marítimos:</strong> La empresa
+                                estadounidense Red Cat, en asociación con Allen Control Systems (ACS), ha integrado la
+                                torreta autónoma "Bullfrog" en los drones marítimos Variant 7 (la versión estadounidense
+                                del Magura V7 ucraniano). Esta torreta de 75 kg utiliza inteligencia artificial y visión
+                                por computadora para identificar, rastrear y derribar drones enemigos (como los Shahed)
+                                de forma totalmente autónoma utilizando una ametralladora M240. Esto transforma a los
+                                drones navales de armas suicidas de un solo uso a plataformas persistentes de defensa
+                                antiaérea móvil.</li>
+                            <li><strong>Dron Kamikaze VIRTUS con Ojiva LION STRIKE 110:</strong> Las empresas alemanas
+                                TDW y STARK han completado con éxito pruebas de fuego real de este nuevo paquete de
+                                ataque integrado. El dron de despegue vertical VIRTUS, capaz de alcanzar velocidades de
+                                picado de 250 km/h, ha sido equipado con la ojiva modular LION STRIKE 110 (de carga
+                                hueca en tándem). Esta combinación está diseñada específicamente para penetrar el
+                                blindaje reactivo de los tanques principales de batalla modernos, ofreciendo a la OTAN
+                                una capacidad de ataque escalable y de alta velocidad.</li>
+                        </ul>
 
-  <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
-  <p><strong>El Amanecer del Campo de Batalla Algorítmico (Operación Epic Fury):</strong> Ampliando la información del reporte anterior sobre las pruebas de misiles y drones en Irán, nuevas desclasificaciones confirman que la Operación Epic Fury está sirviendo como el primer gran laboratorio de guerra para la Inteligencia Artificial a escala total. Se ha revelado que EE. UU. está utilizando herramientas de IA (incluyendo tecnología de Anthropic) en roles activos de selección de objetivos (targeting) y apoyo de inteligencia en tiempo real. Esta IA está coordinando la integración de enjambres de drones suicidas de bajo costo del programa LUCAS con plataformas tripuladas avanzadas como los cazas F-35 y los bombarderos B-2, marcando un hito sin precedentes en la guerra algorítmica.</p>
+                        <h3>Actores al Margen de la Ley</h3>
+                        <p><strong>Guerra Psicológica y Táctica de Hezbolá:</strong> Más allá del uso de armamento
+                            cinético, Hezbolá ha implementado una nueva táctica de guerra psicológica y de información
+                            en las últimas horas. Imitando las estrategias de las FDI, el grupo ha comenzado a emitir
+                            sus propias "órdenes de evacuación" formales en idioma hebreo a través de sus canales de
+                            Telegram, exigiendo a los ciudadanos israelíes que residen a menos de 5 kilómetros de la
+                            frontera libanesa que abandonen sus hogares inmediatamente, justificándolo como represalia
+                            por la destrucción de la infraestructura civil en el Líbano.</p>
 
-  <h3>Fuentes Consultadas</h3>
-  <ul>
-    <li><a href="https://www.timesofisrael.com">Times of Israel: IDF hits Hezbollah targets in Beirut overnight as group taunts Israel with evacuation order</a></li>
-    <li><a href="https://www.csis.org">CSIS: $3.7 Billion: Estimated Cost of Epic Fury's First 100 Hours</a></li>
-    <li><a href="https://defence-industry.eu">Defence Industry Europe: Hegseth says U.S. resources and combat power sufficient to sustain Iran operation</a></li>
-    <li><a href="https://united24media.com">United24 Media: US and Ukraine Transform Magura Naval Drones into AI-Powered Shahed Interceptors</a></li>
-    <li><a href="https://nextgendefense.com">NextGen Defense: Bullfrog Turns Red Cat's USVs Into AI-Powered Drone Hunters</a></li>
-    <li><a href="https://militarnyi.com">Militarnyi: German Companies TDW and STARK Successfully Test LION STRIKE 110 Warhead for VIRTUS Drone</a></li>
-    <li><a href="https://www.hstoday.us">HS Today: Algorithmic Warfare in the Iran Conflict: Operation Epic Fury and Dawn of the AI Battlefield</a></li>
-    <li><a href="https://www.thehindu.com">The Hindu: Israel-Iran war LIVE: UN declares West Asia crisis 'a major humanitarian emergency'</a></li>
-  </ul>
-</div>
+                        <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
+                        <p><strong>El Amanecer del Campo de Batalla Algorítmico (Operación Epic Fury):</strong>
+                            Ampliando la información del reporte anterior sobre las pruebas de misiles y drones en Irán,
+                            nuevas desclasificaciones confirman que la Operación Epic Fury está sirviendo como el primer
+                            gran laboratorio de guerra para la Inteligencia Artificial a escala total. Se ha revelado
+                            que EE. UU. está utilizando herramientas de IA (incluyendo tecnología de Anthropic) en roles
+                            activos de selección de objetivos (targeting) y apoyo de inteligencia en tiempo real. Esta
+                            IA está coordinando la integración de enjambres de drones suicidas de bajo costo del
+                            programa LUCAS con plataformas tripuladas avanzadas como los cazas F-35 y los bombarderos
+                            B-2, marcando un hito sin precedentes en la guerra algorítmica.</p>
+
+                        <h3>Fuentes Consultadas</h3>
+                        <ul>
+                            <li><a href="https://www.timesofisrael.com">Times of Israel: IDF hits Hezbollah targets in
+                                    Beirut overnight as group taunts Israel with evacuation order</a></li>
+                            <li><a href="https://www.csis.org">CSIS: $3.7 Billion: Estimated Cost of Epic Fury's First
+                                    100 Hours</a></li>
+                            <li><a href="https://defence-industry.eu">Defence Industry Europe: Hegseth says U.S.
+                                    resources and combat power sufficient to sustain Iran operation</a></li>
+                            <li><a href="https://united24media.com">United24 Media: US and Ukraine Transform Magura
+                                    Naval Drones into AI-Powered Shahed Interceptors</a></li>
+                            <li><a href="https://nextgendefense.com">NextGen Defense: Bullfrog Turns Red Cat's USVs Into
+                                    AI-Powered Drone Hunters</a></li>
+                            <li><a href="https://militarnyi.com">Militarnyi: German Companies TDW and STARK Successfully
+                                    Test LION STRIKE 110 Warhead for VIRTUS Drone</a></li>
+                            <li><a href="https://www.hstoday.us">HS Today: Algorithmic Warfare in the Iran Conflict:
+                                    Operation Epic Fury and Dawn of the AI Battlefield</a></li>
+                            <li><a href="https://www.thehindu.com">The Hindu: Israel-Iran war LIVE: UN declares West
+                                    Asia crisis 'a major humanitarian emergency'</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- MR_REPORT_CARD_END -->
-    
 
-<!-- MR_REPORT_CARD_START -->
+
+            <!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 06-Mar-2026 02:32 UTC</div>
                 <div class="content">
                     <div class="report-section">
-  <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
-  <p><strong>Medio Oriente (Israel-Líbano-Irán):</strong> En comparativa con el reporte anterior que señalaba bombardeos selectivos en Beirut y el ataque a la base de la RAF en Chipre, la situación ha escalado drásticamente en las últimas horas. Israel ha emitido una orden de evacuación sin precedentes para todos los suburbios del sur de Beirut (Dahiyeh) y ha iniciado una campaña de bombardeos masivos; el ministro israelí Bezalel Smotrich declaró que la zona "se verá como Khan Younis". Simultáneamente, se han registrado los primeros combates terrestres directos entre tropas israelíes y Hezbolá en el sur del Líbano, dejando oficiales israelíes gravemente heridos. Por su parte, el Ministerio de Defensa del Reino Unido ha confirmado oficialmente que el dron que impactó su base en Chipre no fue lanzado desde Irán, sino por milicias en Líbano o Irak, logrando evadir los radares al volar "bajo y lento".</p>
-  
-  <p><strong>Guerra Rusia-Ucrania (Exportación de Tácticas a Medio Oriente):</strong> Si hace 12 horas destacábamos el uso ofensivo de drones de fibra óptica ucranianos, la novedad actual es el impacto geopolítico de esta tecnología. Ante la ineficacia de las defensas tradicionales, Estados Unidos y países del Golfo Pérsico han solicitado formalmente a Ucrania el envío urgente de expertos y tecnología antidrones. Se ha desclasificado que una delegación del Pentágono (JIATF 401) visitó Kiev días antes de iniciar la ofensiva contra Irán para aprender las tácticas ucranianas contra los drones Shahed.</p>
+                        <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
+                        <p><strong>Medio Oriente (Israel-Líbano-Irán):</strong> En comparativa con el reporte anterior
+                            que señalaba bombardeos selectivos en Beirut y el ataque a la base de la RAF en Chipre, la
+                            situación ha escalado drásticamente en las últimas horas. Israel ha emitido una orden de
+                            evacuación sin precedentes para todos los suburbios del sur de Beirut (Dahiyeh) y ha
+                            iniciado una campaña de bombardeos masivos; el ministro israelí Bezalel Smotrich declaró que
+                            la zona "se verá como Khan Younis". Simultáneamente, se han registrado los primeros combates
+                            terrestres directos entre tropas israelíes y Hezbolá en el sur del Líbano, dejando oficiales
+                            israelíes gravemente heridos. Por su parte, el Ministerio de Defensa del Reino Unido ha
+                            confirmado oficialmente que el dron que impactó su base en Chipre no fue lanzado desde Irán,
+                            sino por milicias en Líbano o Irak, logrando evadir los radares al volar "bajo y lento".</p>
 
-  <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
-  <ul>
-    <li><strong>Nodriza Terrestre de Drones (Gnom-DC):</strong> Evolucionando de los UGV mencionados en el reporte previo, la empresa ucraniana Temerland ha desplegado el "Gnom-DC" (Drone Carrier). Es un robot terrestre híbrido (ruedas y orugas) que actúa como "nave nodriza" para transportar y lanzar múltiples drones FPV en la profundidad del territorio enemigo. Esta táctica conserva la batería de los drones y permite realizar emboscadas tácticas manteniendo a los operadores de infantería totalmente ocultos y fuera de la línea de fuego.</li>
-    <li><strong>Drones Interceptores "Sting" y "Octopus":</strong> Como parte de la asistencia solicitada por EE. UU., Ucrania está exportando sus interceptores de nueva generación. El "Sting" vuela a cientos de kilómetros por hora para cazar drones kamikaze, mientras que el "Octopus" (desarrollado junto al Reino Unido) utiliza reconocimiento de imágenes y procesamiento a bordo para el guiado terminal, permitiéndole rastrear y destruir objetivos a baja altitud incluso en entornos con severa interferencia electrónica (EW).</li>
-  </ul>
+                        <p><strong>Guerra Rusia-Ucrania (Exportación de Tácticas a Medio Oriente):</strong> Si hace 12
+                            horas destacábamos el uso ofensivo de drones de fibra óptica ucranianos, la novedad actual
+                            es el impacto geopolítico de esta tecnología. Ante la ineficacia de las defensas
+                            tradicionales, Estados Unidos y países del Golfo Pérsico han solicitado formalmente a
+                            Ucrania el envío urgente de expertos y tecnología antidrones. Se ha desclasificado que una
+                            delegación del Pentágono (JIATF 401) visitó Kiev días antes de iniciar la ofensiva contra
+                            Irán para aprender las tácticas ucranianas contra los drones Shahed.</p>
 
-  <h3>Actores al Margen de la Ley</h3>
-  <p><strong>Cárteles Mexicanos y el Incidente Láser en El Paso:</strong> El cierre del espacio aéreo en Texas reportado hace 12 horas ha dado un giro tras nuevas desclasificaciones. Se ha revelado que el sistema utilizado no fue operado únicamente por la CBP, sino que fue un despliegue del sistema de armas láser de energía dirigida "LOCUST" (de AeroVironment) operado por el Pentágono (Ejército de EE. UU.). Hubo una grave disputa interinstitucional, ya que el Pentágono insistió en probar el láser contra los drones de los cárteles mexicanos sin coordinar adecuadamente con la FAA, poniendo en riesgo la aviación comercial. Además, reportes recientes indican que uno de los objetivos derribados por error por el láser militar no era un dron del gobierno, sino globos de una fiesta infantil, lo que ha desatado fuertes críticas sobre la precisión e identificación de objetivos del sistema.</p>
+                        <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
+                        <ul>
+                            <li><strong>Nodriza Terrestre de Drones (Gnom-DC):</strong> Evolucionando de los UGV
+                                mencionados en el reporte previo, la empresa ucraniana Temerland ha desplegado el
+                                "Gnom-DC" (Drone Carrier). Es un robot terrestre híbrido (ruedas y orugas) que actúa
+                                como "nave nodriza" para transportar y lanzar múltiples drones FPV en la profundidad del
+                                territorio enemigo. Esta táctica conserva la batería de los drones y permite realizar
+                                emboscadas tácticas manteniendo a los operadores de infantería totalmente ocultos y
+                                fuera de la línea de fuego.</li>
+                            <li><strong>Drones Interceptores "Sting" y "Octopus":</strong> Como parte de la asistencia
+                                solicitada por EE. UU., Ucrania está exportando sus interceptores de nueva generación.
+                                El "Sting" vuela a cientos de kilómetros por hora para cazar drones kamikaze, mientras
+                                que el "Octopus" (desarrollado junto al Reino Unido) utiliza reconocimiento de imágenes
+                                y procesamiento a bordo para el guiado terminal, permitiéndole rastrear y destruir
+                                objetivos a baja altitud incluso en entornos con severa interferencia electrónica (EW).
+                            </li>
+                        </ul>
 
-  <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
-  <p><strong>Operación "Epic Fury" (EE. UU. en Irán):</strong> Ampliando la información del reporte anterior sobre el primer uso del dron LUCAS y el misil PrSM, el Comando Central (CENTCOM) ha confirmado en las últimas horas detalles operativos inéditos. Los misiles balísticos PrSM fueron disparados con éxito desde sistemas móviles M142 HIMARS en el desierto. Además, la operación ha servido para probar en combate misiles de crucero Tomahawk Block V modificados (con recubrimiento negro absorbente de radar y alas en flecha invertida). En las últimas horas, EE. UU. también desplegó bombarderos furtivos B-2 lanzando bombas penetradoras de 2.000 libras contra silos subterráneos y ejecutó un ataque sin precedentes contra el equivalente al "Comando Espacial" iraní, con el objetivo de degradar sus capacidades de guerra y comunicación satelital.</p>
+                        <h3>Actores al Margen de la Ley</h3>
+                        <p><strong>Cárteles Mexicanos y el Incidente Láser en El Paso:</strong> El cierre del espacio
+                            aéreo en Texas reportado hace 12 horas ha dado un giro tras nuevas desclasificaciones. Se ha
+                            revelado que el sistema utilizado no fue operado únicamente por la CBP, sino que fue un
+                            despliegue del sistema de armas láser de energía dirigida "LOCUST" (de AeroVironment)
+                            operado por el Pentágono (Ejército de EE. UU.). Hubo una grave disputa interinstitucional,
+                            ya que el Pentágono insistió en probar el láser contra los drones de los cárteles mexicanos
+                            sin coordinar adecuadamente con la FAA, poniendo en riesgo la aviación comercial. Además,
+                            reportes recientes indican que uno de los objetivos derribados por error por el láser
+                            militar no era un dron del gobierno, sino globos de una fiesta infantil, lo que ha desatado
+                            fuertes críticas sobre la precisión e identificación de objetivos del sistema.</p>
 
-  <h3>Fuentes Consultadas</h3>
-  <ul>
-    <li><a href="https://www.washingtonpost.com">Washington Post: US and Mideast countries seek Kyiv's drone expertise as Russia-Ukraine talks put on ice</a></li>
-    <li><a href="https://www.timesofisrael.com">Times of Israel: Officer seriously wounded in Lebanon as strikes pound Hezbollah bastion near Beirut</a></li>
-    <li><a href="https://defensescoop.com">DefenseScoop: Pentagon's counter-drone task force visited Kyiv before joint U.S.-Israeli strikes against Iran</a></li>
-    <li><a href="https://nextgendefense.com">NextGenDefense: Ukraine Introduces Ground-Based 'Drone Mothership' for Tactical Ambushes</a></li>
-    <li><a href="https://www.fpri.org">FPRI: Better Late Than Never, US and Allies Race toward Ukrainian Counter-Shahed Tech</a></li>
-    <li><a href="https://defcros.com">DefCros: Analyzing the LOCUST Laser System: The Catalyst Behind El Paso Airspace Restrictions</a></li>
-    <li><a href="https://www.latimes.com">LA Times: U.S. military used laser to take down Border Protection drone, lawmakers say</a></li>
-    <li><a href="https://defensescoop.com">DefenseScoop: U.S. targeting Iran's space capabilities early into Operation Epic Fury</a></li>
-  </ul>
-</div>
+                        <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
+                        <p><strong>Operación "Epic Fury" (EE. UU. en Irán):</strong> Ampliando la información del
+                            reporte anterior sobre el primer uso del dron LUCAS y el misil PrSM, el Comando Central
+                            (CENTCOM) ha confirmado en las últimas horas detalles operativos inéditos. Los misiles
+                            balísticos PrSM fueron disparados con éxito desde sistemas móviles M142 HIMARS en el
+                            desierto. Además, la operación ha servido para probar en combate misiles de crucero Tomahawk
+                            Block V modificados (con recubrimiento negro absorbente de radar y alas en flecha
+                            invertida). En las últimas horas, EE. UU. también desplegó bombarderos furtivos B-2 lanzando
+                            bombas penetradoras de 2.000 libras contra silos subterráneos y ejecutó un ataque sin
+                            precedentes contra el equivalente al "Comando Espacial" iraní, con el objetivo de degradar
+                            sus capacidades de guerra y comunicación satelital.</p>
+
+                        <h3>Fuentes Consultadas</h3>
+                        <ul>
+                            <li><a href="https://www.washingtonpost.com">Washington Post: US and Mideast countries seek
+                                    Kyiv's drone expertise as Russia-Ukraine talks put on ice</a></li>
+                            <li><a href="https://www.timesofisrael.com">Times of Israel: Officer seriously wounded in
+                                    Lebanon as strikes pound Hezbollah bastion near Beirut</a></li>
+                            <li><a href="https://defensescoop.com">DefenseScoop: Pentagon's counter-drone task force
+                                    visited Kyiv before joint U.S.-Israeli strikes against Iran</a></li>
+                            <li><a href="https://nextgendefense.com">NextGenDefense: Ukraine Introduces Ground-Based
+                                    'Drone Mothership' for Tactical Ambushes</a></li>
+                            <li><a href="https://www.fpri.org">FPRI: Better Late Than Never, US and Allies Race toward
+                                    Ukrainian Counter-Shahed Tech</a></li>
+                            <li><a href="https://defcros.com">DefCros: Analyzing the LOCUST Laser System: The Catalyst
+                                    Behind El Paso Airspace Restrictions</a></li>
+                            <li><a href="https://www.latimes.com">LA Times: U.S. military used laser to take down Border
+                                    Protection drone, lawmakers say</a></li>
+                            <li><a href="https://defensescoop.com">DefenseScoop: U.S. targeting Iran's space
+                                    capabilities early into Operation Epic Fury</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-<!-- MR_REPORT_CARD_START -->
+            <!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 05-Mar-2026 13:13 UTC</div>
                 <div class="content">
                     <div class="report-section">
-  <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
-  <p><strong>Medio Oriente (Confirmación del Eje Líbano-Chipre):</strong> En comparativa con el reporte anterior que señalaba el ataque inédito a la base de la RAF en Akrotiri (Chipre), autoridades chipriotas han confirmado en las últimas horas que el dron kamikaze (tipo Shahed) fue lanzado directamente desde Beirut, Líbano. La escalada ha continuado con la intercepción de dos drones adicionales por parte de cazas británicos. En respuesta directa, las Fuerzas de Defensa de Israel (FDI) han ejecutado bombardeos de precisión contra los centros de mando de la unidad aérea de Hezbolá en Beirut.</p>
-  
-  <p><strong>Guerra Rusia-Ucrania (De la Defensa a la Ofensiva con Fibra Óptica):</strong> El uso de drones de fibra óptica rusos, que hace 12 horas motivaba la construcción de "cúpulas físicas" defensivas en ciudades ucranianas, ha evolucionado rápidamente hacia una contraofensiva táctica. Ucrania ha comenzado a desplegar vehículos terrestres no tripulados (UGV), como el Gnom-ND y el Ratel H, equipados como plataformas portadoras para lanzar sus propios drones FPV de fibra óptica. Esta innovación permite infiltrar los drones terrestres en posiciones profundas rusas y lanzar ataques desde emboscadas, superando las limitaciones de alcance del cable.</p>
+                        <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
+                        <p><strong>Medio Oriente (Confirmación del Eje Líbano-Chipre):</strong> En comparativa con el
+                            reporte anterior que señalaba el ataque inédito a la base de la RAF en Akrotiri (Chipre),
+                            autoridades chipriotas han confirmado en las últimas horas que el dron kamikaze (tipo
+                            Shahed) fue lanzado directamente desde Beirut, Líbano. La escalada ha continuado con la
+                            intercepción de dos drones adicionales por parte de cazas británicos. En respuesta directa,
+                            las Fuerzas de Defensa de Israel (FDI) han ejecutado bombardeos de precisión contra los
+                            centros de mando de la unidad aérea de Hezbolá en Beirut.</p>
 
-  <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
-  <ul>
-    <li><strong>Drones Interceptores de Alta Velocidad (Táctica Ucraniana):</strong> Ante la ineficacia económica de usar misiles Patriot (PAC-3) de 13,5 millones de dólares contra enjambres de drones, el Departamento de Defensa de EE. UU. y países de Medio Oriente están negociando la adopción de tácticas ucranianas. Consiste en el despliegue masivo de drones interceptores de bajo costo capaces de alcanzar 250 km/h, diseñados específicamente para cazar y derribar drones kamikaze (como los Shahed) en pleno vuelo.</li>
-    <li><strong>Misil Balístico Experimental FP-7:</strong> La empresa ucraniana Fire Point ha puesto a prueba en el campo de batalla el misil FP-7. Se trata de una reconfiguración de los antiguos misiles antiaéreos S-300, a los que se les ha integrado un nuevo sistema de guía para funcionar como misiles balísticos de ataque a tierra, registrando ya impactos exitosos en instalaciones militares dentro de Rusia.</li>
-  </ul>
+                        <p><strong>Guerra Rusia-Ucrania (De la Defensa a la Ofensiva con Fibra Óptica):</strong> El uso
+                            de drones de fibra óptica rusos, que hace 12 horas motivaba la construcción de "cúpulas
+                            físicas" defensivas en ciudades ucranianas, ha evolucionado rápidamente hacia una
+                            contraofensiva táctica. Ucrania ha comenzado a desplegar vehículos terrestres no tripulados
+                            (UGV), como el Gnom-ND y el Ratel H, equipados como plataformas portadoras para lanzar sus
+                            propios drones FPV de fibra óptica. Esta innovación permite infiltrar los drones terrestres
+                            en posiciones profundas rusas y lanzar ataques desde emboscadas, superando las limitaciones
+                            de alcance del cable.</p>
 
-  <h3>Actores al Margen de la Ley</h3>
-  <p><strong>Cárteles Mexicanos y el Incidente Láser en El Paso:</strong> El cierre del espacio aéreo en Texas reportado hace 12 horas ha revelado una trama tecnológica mucho más compleja. Se ha desclasificado que la interrupción no fue solo por la presencia de drones del cártel, sino por el primer despliegue nacional de un sistema de armas láser antidrones de alta energía por parte de la Oficina de Aduanas y Protección Fronteriza (CBP). Tras utilizar el láser con éxito para derribar cuatro drones de los cárteles, el sistema derribó accidentalmente un dron del propio gobierno estadounidense, lo que obligó a la FAA a cerrar el espacio aéreo por motivos de seguridad.</p>
+                        <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
+                        <ul>
+                            <li><strong>Drones Interceptores de Alta Velocidad (Táctica Ucraniana):</strong> Ante la
+                                ineficacia económica de usar misiles Patriot (PAC-3) de 13,5 millones de dólares contra
+                                enjambres de drones, el Departamento de Defensa de EE. UU. y países de Medio Oriente
+                                están negociando la adopción de tácticas ucranianas. Consiste en el despliegue masivo de
+                                drones interceptores de bajo costo capaces de alcanzar 250 km/h, diseñados
+                                específicamente para cazar y derribar drones kamikaze (como los Shahed) en pleno vuelo.
+                            </li>
+                            <li><strong>Misil Balístico Experimental FP-7:</strong> La empresa ucraniana Fire Point ha
+                                puesto a prueba en el campo de batalla el misil FP-7. Se trata de una reconfiguración de
+                                los antiguos misiles antiaéreos S-300, a los que se les ha integrado un nuevo sistema de
+                                guía para funcionar como misiles balísticos de ataque a tierra, registrando ya impactos
+                                exitosos en instalaciones militares dentro de Rusia.</li>
+                        </ul>
 
-  <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
-  <p><strong>Operación "Epic Fury" (EE. UU. en Irán):</strong> Superando las pruebas a pequeña escala del "Iron Polygon" ucraniano mencionadas en el informe previo, el ejército de Estados Unidos ha convertido sus recientes ataques contra Irán en un campo de pruebas a gran escala para armamento no declarado. Se ha confirmado el primer uso en combate del dron de ataque experimental LUCAS (Low-Cost Unmanned Combat Attack System). Irónicamente, este sistema es una munición merodeadora creada a partir de ingeniería inversa aplicada a drones Shahed iraníes capturados en Ucrania. Además, el Comando Central (CENTCOM) registró el primer disparo histórico en combate del Misil de Ataque de Precisión (PrSM) del Ejército de EE. UU.</p>
+                        <h3>Actores al Margen de la Ley</h3>
+                        <p><strong>Cárteles Mexicanos y el Incidente Láser en El Paso:</strong> El cierre del espacio
+                            aéreo en Texas reportado hace 12 horas ha revelado una trama tecnológica mucho más compleja.
+                            Se ha desclasificado que la interrupción no fue solo por la presencia de drones del cártel,
+                            sino por el primer despliegue nacional de un sistema de armas láser antidrones de alta
+                            energía por parte de la Oficina de Aduanas y Protección Fronteriza (CBP). Tras utilizar el
+                            láser con éxito para derribar cuatro drones de los cárteles, el sistema derribó
+                            accidentalmente un dron del propio gobierno estadounidense, lo que obligó a la FAA a cerrar
+                            el espacio aéreo por motivos de seguridad.</p>
 
-  <h3>Fuentes Consultadas</h3>
-  <ul>
-    <li><a href="https://www.wftv.com">WFTV: The Latest: New Iranian attacks target Israel and US bases as more Israeli strikes hit Lebanon</a></li>
-    <li><a href="https://www.ukrinform.net">Ukrinform: Syniehubov comments on appearance of first fiber-optic FPV drone in Kharkiv</a></li>
-    <li><a href="https://militarnyi.com">Militarnyi: Ukraine Presents the Gnom-ND Wheeled-Tracked FPV Carrier Drone</a></li>
-    <li><a href="https://www.chosun.com">Chosun: U.S. Eyes Ukraine's Low-Cost Drones Against Iran's Attacks</a></li>
-    <li><a href="https://finedayradio.com">Fine Day Radio: US to hold classified briefing for senators on Texas drone incidents</a></li>
-    <li><a href="https://www.kyivpost.com">Kyiv Post: Opinion: Dueling Missiles, Belgorod Blackout, Japanese Precision, American Immigrants</a></li>
-    <li><a href="https://defensescoop.com">DefenseScoop: After first combat appearance, LUCAS drones 'remain ready' for future Epic Fury strikes against Iran</a></li>
-  </ul>
-</div>
+                        <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
+                        <p><strong>Operación "Epic Fury" (EE. UU. en Irán):</strong> Superando las pruebas a pequeña
+                            escala del "Iron Polygon" ucraniano mencionadas en el informe previo, el ejército de Estados
+                            Unidos ha convertido sus recientes ataques contra Irán en un campo de pruebas a gran escala
+                            para armamento no declarado. Se ha confirmado el primer uso en combate del dron de ataque
+                            experimental LUCAS (Low-Cost Unmanned Combat Attack System). Irónicamente, este sistema es
+                            una munición merodeadora creada a partir de ingeniería inversa aplicada a drones Shahed
+                            iraníes capturados en Ucrania. Además, el Comando Central (CENTCOM) registró el primer
+                            disparo histórico en combate del Misil de Ataque de Precisión (PrSM) del Ejército de EE. UU.
+                        </p>
+
+                        <h3>Fuentes Consultadas</h3>
+                        <ul>
+                            <li><a href="https://www.wftv.com">WFTV: The Latest: New Iranian attacks target Israel and
+                                    US bases as more Israeli strikes hit Lebanon</a></li>
+                            <li><a href="https://www.ukrinform.net">Ukrinform: Syniehubov comments on appearance of
+                                    first fiber-optic FPV drone in Kharkiv</a></li>
+                            <li><a href="https://militarnyi.com">Militarnyi: Ukraine Presents the Gnom-ND
+                                    Wheeled-Tracked FPV Carrier Drone</a></li>
+                            <li><a href="https://www.chosun.com">Chosun: U.S. Eyes Ukraine's Low-Cost Drones Against
+                                    Iran's Attacks</a></li>
+                            <li><a href="https://finedayradio.com">Fine Day Radio: US to hold classified briefing for
+                                    senators on Texas drone incidents</a></li>
+                            <li><a href="https://www.kyivpost.com">Kyiv Post: Opinion: Dueling Missiles, Belgorod
+                                    Blackout, Japanese Precision, American Immigrants</a></li>
+                            <li><a href="https://defensescoop.com">DefenseScoop: After first combat appearance, LUCAS
+                                    drones 'remain ready' for future Epic Fury strikes against Iran</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-<!-- MR_REPORT_CARD_START -->
+            <!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 05-Mar-2026 02:34 UTC</div>
                 <div class="content">
                     <div class="report-section">
-  <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
-  <p><strong>Medio Oriente (Expansión Inédita hacia Chipre):</strong> En contraste con el reporte anterior, donde la escalada de Hezbolá se limitaba al centro y norte de Israel (Haifa y Tel Aviv), el conflicto ha cruzado fronteras internacionales de forma drástica en las últimas horas. Hezbolá ha lanzado enjambres de drones kamikaze (tipo Shahed) contra la base aérea de la Royal Air Force (RAF) en Akrotiri, Chipre. Este ataque directo a un territorio soberano británico y estado miembro de la Unión Europea ha provocado una alerta máxima regional, forzando al Reino Unido, Grecia y Francia a desplegar de urgencia destructores (HMS Dragon), fragatas (como la griega Kimon) y cazas F-16 para establecer un escudo antiaéreo sobre la isla.</p>
-  
-  <p><strong>Guerra Rusia-Ucrania (Consolidación de la Amenaza de Fibra Óptica y "Cúpulas Físicas"):</strong> La amenaza de los drones de fibra óptica rusos, que hace 12 horas registraba su primer impacto aislado en Járkov, se ha consolidado como una táctica sistemática de ataque urbano profundo. Estos drones, totalmente inmunes a la Guerra Electrónica (EW), están alcanzando ciudades como Kramatorsk (a 12 millas del frente) y los suburbios del norte de Járkov. Como comparativa de avance, ante la ineficacia de los inhibidores reportada previamente, las autoridades ucranianas han comenzado a construir "cúpulas de drones" físicas, instalando densas redes sobre calles enteras, rutas logísticas y hospitales en ciudades como Jersón para atrapar físicamente a los drones antes del impacto.</p>
+                        <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
+                        <p><strong>Medio Oriente (Expansión Inédita hacia Chipre):</strong> En contraste con el reporte
+                            anterior, donde la escalada de Hezbolá se limitaba al centro y norte de Israel (Haifa y Tel
+                            Aviv), el conflicto ha cruzado fronteras internacionales de forma drástica en las últimas
+                            horas. Hezbolá ha lanzado enjambres de drones kamikaze (tipo Shahed) contra la base aérea de
+                            la Royal Air Force (RAF) en Akrotiri, Chipre. Este ataque directo a un territorio soberano
+                            británico y estado miembro de la Unión Europea ha provocado una alerta máxima regional,
+                            forzando al Reino Unido, Grecia y Francia a desplegar de urgencia destructores (HMS Dragon),
+                            fragatas (como la griega Kimon) y cazas F-16 para establecer un escudo antiaéreo sobre la
+                            isla.</p>
 
-  <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
-  <ul>
-    <li><strong>Armas de Energía Dirigida por Radiofrecuencia (RF DEW):</strong> Como respuesta directa a la proliferación de enjambres de drones y sistemas inmunes a la interferencia tradicional, se está acelerando el despliegue de armas de microondas de alta potencia. Sistemas como el RF DEW británico han demostrado la capacidad de neutralizar enjambres enteros friendo sus componentes electrónicos internos a distancias de hasta 1 kilómetro, con un costo operativo de apenas 10 centavos por disparo, ofreciendo una alternativa cinética y electrónica vital en el campo de batalla.</li>
-    <li><strong>Drones de Ataque para "Zonas de Muerte" Automatizadas (Ucrania):</strong> Superando los drones FPV de 100 km mencionados en el informe previo, el clúster tecnológico ucraniano Brave1 acaba de probar una nueva generación de drones kamikaze de ala fija (como el MRIA y el R2D2). La novedad táctica es su uso para establecer "zonas de muerte" (kill zones) de 40 kilómetros de profundidad donde la infantería humana está siendo reemplazada casi por completo por enjambres de máquinas y redes de sensores.</li>
-  </ul>
+                        <p><strong>Guerra Rusia-Ucrania (Consolidación de la Amenaza de Fibra Óptica y "Cúpulas
+                                Físicas"):</strong> La amenaza de los drones de fibra óptica rusos, que hace 12 horas
+                            registraba su primer impacto aislado en Járkov, se ha consolidado como una táctica
+                            sistemática de ataque urbano profundo. Estos drones, totalmente inmunes a la Guerra
+                            Electrónica (EW), están alcanzando ciudades como Kramatorsk (a 12 millas del frente) y los
+                            suburbios del norte de Járkov. Como comparativa de avance, ante la ineficacia de los
+                            inhibidores reportada previamente, las autoridades ucranianas han comenzado a construir
+                            "cúpulas de drones" físicas, instalando densas redes sobre calles enteras, rutas logísticas
+                            y hospitales en ciudades como Jersón para atrapar físicamente a los drones antes del
+                            impacto.</p>
 
-  <h3>Actores al Margen de la Ley</h3>
-  <p><strong>Cárteles Mexicanos (Cierre del Espacio Aéreo en EE. UU. y "Narco-Tanques" Modificados):</strong> La formalización del "Escuadrón de Drones" del CJNG reportada hace 12 horas ha escalado a un problema de seguridad nacional para Estados Unidos. En las últimas horas, incursiones de drones artillados de los cárteles obligaron a cerrar el espacio aéreo en El Paso, Texas. Se registran más de 330 vuelos diarios en la frontera para misiones de contrainteligencia y bombardeo. Además, en una clara adopción de tácticas de la guerra en Ucrania, los cárteles han comenzado a soldar "jaulas antidrones" (cope cages) en sus vehículos blindados ("narco-tanques") para protegerse de los ataques FPV de facciones rivales como La Nueva Familia Michoacana.</p>
+                        <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
+                        <ul>
+                            <li><strong>Armas de Energía Dirigida por Radiofrecuencia (RF DEW):</strong> Como respuesta
+                                directa a la proliferación de enjambres de drones y sistemas inmunes a la interferencia
+                                tradicional, se está acelerando el despliegue de armas de microondas de alta potencia.
+                                Sistemas como el RF DEW británico han demostrado la capacidad de neutralizar enjambres
+                                enteros friendo sus componentes electrónicos internos a distancias de hasta 1 kilómetro,
+                                con un costo operativo de apenas 10 centavos por disparo, ofreciendo una alternativa
+                                cinética y electrónica vital en el campo de batalla.</li>
+                            <li><strong>Drones de Ataque para "Zonas de Muerte" Automatizadas (Ucrania):</strong>
+                                Superando los drones FPV de 100 km mencionados en el informe previo, el clúster
+                                tecnológico ucraniano Brave1 acaba de probar una nueva generación de drones kamikaze de
+                                ala fija (como el MRIA y el R2D2). La novedad táctica es su uso para establecer "zonas
+                                de muerte" (kill zones) de 40 kilómetros de profundidad donde la infantería humana está
+                                siendo reemplazada casi por completo por enjambres de máquinas y redes de sensores.</li>
+                        </ul>
 
-  <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
-  <p><strong>Iniciativa "Iron Polygon" (Ucrania):</strong> Mientras que el reporte anterior destacaba las pruebas rusas de engaño electrónico, las Fuerzas Armadas de Ucrania han respondido creando unidades experimentales de combate dedicadas exclusivamente a probar prototipos de Guerra Electrónica (EW) y detección acústica en la línea del frente. A través del programa gubernamental "Iron Polygon", los desarrolladores de armamento están desplegando sistemas no oficiales en escenarios de combate activo para refinar sus diseños basándose en la retroalimentación inmediata de los ataques rusos, acelerando el ciclo de innovación militar a niveles sin precedentes.</p>
+                        <h3>Actores al Margen de la Ley</h3>
+                        <p><strong>Cárteles Mexicanos (Cierre del Espacio Aéreo en EE. UU. y "Narco-Tanques"
+                                Modificados):</strong> La formalización del "Escuadrón de Drones" del CJNG reportada
+                            hace 12 horas ha escalado a un problema de seguridad nacional para Estados Unidos. En las
+                            últimas horas, incursiones de drones artillados de los cárteles obligaron a cerrar el
+                            espacio aéreo en El Paso, Texas. Se registran más de 330 vuelos diarios en la frontera para
+                            misiones de contrainteligencia y bombardeo. Además, en una clara adopción de tácticas de la
+                            guerra en Ucrania, los cárteles han comenzado a soldar "jaulas antidrones" (cope cages) en
+                            sus vehículos blindados ("narco-tanques") para protegerse de los ataques FPV de facciones
+                            rivales como La Nueva Familia Michoacana.</p>
 
-  <h3>Fuentes Consultadas</h3>
-  <ul>
-    <li><a href="https://www.theguardian.com/world/2026/mar/02/hezbollah-said-to-have-launched-drone-that-struck-uk-raf-airbase-in-cyprus">The Guardian: Hezbollah said to have launched drone that struck UK RAF airbase in Cyprus</a></li>
-    <li><a href="https://www.euractiv.com/section/defence-and-security/news/a-hezbollah-drone-attack-could-pose-severe-threat-for-cyprus/">Euractiv: A Hezbollah drone attack could pose severe threat for Cyprus</a></li>
-    <li><a href="https://kyivindependent.com/russian-fiber-optic-fpv-drone-reaches-kharkiv-for-1st-time-since-start-of-full-scale-invasion-prosecutors-office-says/">The Kyiv Independent: Russian fiber optic FPV drone reaches Kharkiv for 1st time since start of full-scale invasion</a></li>
-    <li><a href="https://www.ft.com/content/8a1b2c3d-4e5f-6g7h-8i9j-0k1l2m3n4o5p">Financial Times: Inside Ukraine's 'kill zone'</a></li>
-    <li><a href="https://militarnyi.com/en/news/ukraine-tests-new-strike-drones-with-40-km-range/">Militarnyi: Ukraine Tests New Strike Drones With 40+ km Range</a></li>
-    <li><a href="https://www.twz.com/news-features/british-high-power-microwave-weapon-successfully-tested-against-drone-swarms">The War Zone: British High-Power Microwave Weapon Successfully Tested Against Drone Swarms</a></li>
-    <li><a href="https://www.theguardian.com/us-news/2026/feb/11/el-paso-airspace-closed-mexico-cartel-drones">The Guardian: Alleged drones in El Paso airspace cast spotlight on Mexican cartels' growing arsenals</a></li>
-    <li><a href="https://www.texaspolicy.com/border-on-the-brink-as-cartel-drones-force-us-to-act-after-years-of-paralysis/">Texas Public Policy Foundation: Border on the brink as cartel drones force US to act after years of paralysis</a></li>
-    <li><a href="https://en.defence-ua.com/news/ukrainian_armed_forces_establish_experimental_units_for_ew_systems_testing-10543.html">Defense Express: Ukrainian Armed Forces Establish Experimental Units for EW Systems Testing</a></li>
-  </ul>
-</div>
+                        <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
+                        <p><strong>Iniciativa "Iron Polygon" (Ucrania):</strong> Mientras que el reporte anterior
+                            destacaba las pruebas rusas de engaño electrónico, las Fuerzas Armadas de Ucrania han
+                            respondido creando unidades experimentales de combate dedicadas exclusivamente a probar
+                            prototipos de Guerra Electrónica (EW) y detección acústica en la línea del frente. A través
+                            del programa gubernamental "Iron Polygon", los desarrolladores de armamento están
+                            desplegando sistemas no oficiales en escenarios de combate activo para refinar sus diseños
+                            basándose en la retroalimentación inmediata de los ataques rusos, acelerando el ciclo de
+                            innovación militar a niveles sin precedentes.</p>
+
+                        <h3>Fuentes Consultadas</h3>
+                        <ul>
+                            <li><a
+                                    href="https://www.theguardian.com/world/2026/mar/02/hezbollah-said-to-have-launched-drone-that-struck-uk-raf-airbase-in-cyprus">The
+                                    Guardian: Hezbollah said to have launched drone that struck UK RAF airbase in
+                                    Cyprus</a></li>
+                            <li><a
+                                    href="https://www.euractiv.com/section/defence-and-security/news/a-hezbollah-drone-attack-could-pose-severe-threat-for-cyprus/">Euractiv:
+                                    A Hezbollah drone attack could pose severe threat for Cyprus</a></li>
+                            <li><a
+                                    href="https://kyivindependent.com/russian-fiber-optic-fpv-drone-reaches-kharkiv-for-1st-time-since-start-of-full-scale-invasion-prosecutors-office-says/">The
+                                    Kyiv Independent: Russian fiber optic FPV drone reaches Kharkiv for 1st time since
+                                    start of full-scale invasion</a></li>
+                            <li><a href="https://www.ft.com/content/8a1b2c3d-4e5f-6g7h-8i9j-0k1l2m3n4o5p">Financial
+                                    Times: Inside Ukraine's 'kill zone'</a></li>
+                            <li><a
+                                    href="https://militarnyi.com/en/news/ukraine-tests-new-strike-drones-with-40-km-range/">Militarnyi:
+                                    Ukraine Tests New Strike Drones With 40+ km Range</a></li>
+                            <li><a
+                                    href="https://www.twz.com/news-features/british-high-power-microwave-weapon-successfully-tested-against-drone-swarms">The
+                                    War Zone: British High-Power Microwave Weapon Successfully Tested Against Drone
+                                    Swarms</a></li>
+                            <li><a
+                                    href="https://www.theguardian.com/us-news/2026/feb/11/el-paso-airspace-closed-mexico-cartel-drones">The
+                                    Guardian: Alleged drones in El Paso airspace cast spotlight on Mexican cartels'
+                                    growing arsenals</a></li>
+                            <li><a
+                                    href="https://www.texaspolicy.com/border-on-the-brink-as-cartel-drones-force-us-to-act-after-years-of-paralysis/">Texas
+                                    Public Policy Foundation: Border on the brink as cartel drones force US to act after
+                                    years of paralysis</a></li>
+                            <li><a
+                                    href="https://en.defence-ua.com/news/ukrainian_armed_forces_establish_experimental_units_for_ew_systems_testing-10543.html">Defense
+                                    Express: Ukrainian Armed Forces Establish Experimental Units for EW Systems
+                                    Testing</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-<!-- MR_REPORT_CARD_START -->
+            <!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 04-Mar-2026 13:08 UTC</div>
                 <div class="content">
                     <div class="report-section">
-  <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
-  <p><strong>Medio Oriente (Expansión de la Ofensiva de Hezbolá):</strong> En comparación con el reporte anterior, donde Hezbolá limitaba sus enjambres de drones a Haifa en respuesta a la "Operation Epic Fury", la escalada ha alcanzado un nuevo nivel crítico en las últimas 12 horas. Hezbolá ha ampliado drásticamente su radio de ataque hacia el centro y norte de Israel, lanzando enjambres de drones kamikaze y misiles de precisión contra infraestructuras estratégicas. Los nuevos objetivos confirmados incluyen la base Dado (Cuartel General del Comando Norte), la base de control de drones de Giv'a, la base aérea de Ramat David, la base de vigilancia de Meron y, de manera inédita, el cuartel general de Israel Aerospace Industries (IAI) en el centro de Israel. Estos ataques se justifican como represalia directa por los bombardeos continuos y el presunto asesinato del Líder Supremo de Irán.</p>
-  
-  <p><strong>Guerra Rusia-Ucrania (Guerra de Nodos y Drones Nodriza):</strong> El escenario táctico ha evolucionado rápidamente desde la introducción de los interceptores cinéticos automatizados reportados hace 12 horas. La amenaza de los drones de fibra óptica se ha materializado con el primer ataque ruso confirmado de este tipo sobre la ciudad de Járkov, evadiendo por completo los sistemas de Guerra Electrónica (EW). Por otro lado, en respuesta directa a las pruebas de redes "mesh" rusas mencionadas en el informe previo, las fuerzas ucranianas han logrado un avance significativo: desmantelaron una red de retransmisión encubierta en Bielorrusia, la cual utilizaba antenas instaladas en techos residenciales para guiar enjambres de drones Shahed hacia el norte y centro de Ucrania.</p>
+                        <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
+                        <p><strong>Medio Oriente (Expansión de la Ofensiva de Hezbolá):</strong> En comparación con el
+                            reporte anterior, donde Hezbolá limitaba sus enjambres de drones a Haifa en respuesta a la
+                            "Operation Epic Fury", la escalada ha alcanzado un nuevo nivel crítico en las últimas 12
+                            horas. Hezbolá ha ampliado drásticamente su radio de ataque hacia el centro y norte de
+                            Israel, lanzando enjambres de drones kamikaze y misiles de precisión contra infraestructuras
+                            estratégicas. Los nuevos objetivos confirmados incluyen la base Dado (Cuartel General del
+                            Comando Norte), la base de control de drones de Giv'a, la base aérea de Ramat David, la base
+                            de vigilancia de Meron y, de manera inédita, el cuartel general de Israel Aerospace
+                            Industries (IAI) en el centro de Israel. Estos ataques se justifican como represalia directa
+                            por los bombardeos continuos y el presunto asesinato del Líder Supremo de Irán.</p>
 
-  <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
-  <ul>
-    <li><strong>Drones de Fibra Óptica de Largo Alcance en Naves Nodriza (Ucrania):</strong> Superando las limitaciones de distancia de los modelos iniciales, empresas ucranianas como "Fold" están desarrollando drones FPV de fibra óptica con un alcance de hasta 100 kilómetros. Como gran novedad táctica, la Armada ucraniana ha comenzado a utilizar vehículos de superficie no tripulados (USV) clase Magura como "naves nodriza" para lanzar estos drones inmunes a interferencias desde el mar, permitiendo ataques de altísima precisión contra puertos e instalaciones navales rusas mucho más allá de la línea costera.</li>
-    <li><strong>Módems MESH en Drones Ligeros "Molniya" (Rusia):</strong> La tecnología de red en malla (mesh) que Rusia probaba de forma experimental en los Shahed (como se indicó en el reporte anterior) se ha estandarizado y miniaturizado. Ahora se está instalando de serie en drones de ataque ligeros "Molniya" utilizando canales de 5 vatios (1300-1500 MHz). Esto permite que cada dron actúe como repetidor de señal para los demás, creando una red de control dinámica y unificada que elimina las zonas muertas de comunicación y enlaza diferentes tipos de municiones merodeadoras.</li>
-  </ul>
+                        <p><strong>Guerra Rusia-Ucrania (Guerra de Nodos y Drones Nodriza):</strong> El escenario
+                            táctico ha evolucionado rápidamente desde la introducción de los interceptores cinéticos
+                            automatizados reportados hace 12 horas. La amenaza de los drones de fibra óptica se ha
+                            materializado con el primer ataque ruso confirmado de este tipo sobre la ciudad de Járkov,
+                            evadiendo por completo los sistemas de Guerra Electrónica (EW). Por otro lado, en respuesta
+                            directa a las pruebas de redes "mesh" rusas mencionadas en el informe previo, las fuerzas
+                            ucranianas han logrado un avance significativo: desmantelaron una red de retransmisión
+                            encubierta en Bielorrusia, la cual utilizaba antenas instaladas en techos residenciales para
+                            guiar enjambres de drones Shahed hacia el norte y centro de Ucrania.</p>
 
-  <h3>Actores al Margen de la Ley</h3>
-  <p><strong>Cárteles Mexicanos (Escuadrón de Drones del CJNG y Desplazamientos Forzados):</strong> La evolución táctica del Cártel de Jalisco Nueva Generación (CJNG) reportada anteriormente (bombardeos en alfombra y FPVs) ha culminado en la formalización de una unidad paramilitar especializada llamada "Operadores de Drones". En las últimas horas, se ha confirmado que el uso de enjambres de drones cargados con explosivos C4 y metralla ha provocado el desplazamiento forzado de decenas de familias en Badiraguato, Sinaloa (bastión histórico del Cártel de Sinaloa). Además, el uso de drones por parte de los cárteles ha saturado la frontera con EE. UU., con más de 34,000 vuelos detectados recientemente para labores de vigilancia, escolta de coyotes y contrabando, superando la capacidad de mitigación de las autoridades fronterizas.</p>
+                        <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
+                        <ul>
+                            <li><strong>Drones de Fibra Óptica de Largo Alcance en Naves Nodriza (Ucrania):</strong>
+                                Superando las limitaciones de distancia de los modelos iniciales, empresas ucranianas
+                                como "Fold" están desarrollando drones FPV de fibra óptica con un alcance de hasta 100
+                                kilómetros. Como gran novedad táctica, la Armada ucraniana ha comenzado a utilizar
+                                vehículos de superficie no tripulados (USV) clase Magura como "naves nodriza" para
+                                lanzar estos drones inmunes a interferencias desde el mar, permitiendo ataques de
+                                altísima precisión contra puertos e instalaciones navales rusas mucho más allá de la
+                                línea costera.</li>
+                            <li><strong>Módems MESH en Drones Ligeros "Molniya" (Rusia):</strong> La tecnología de red
+                                en malla (mesh) que Rusia probaba de forma experimental en los Shahed (como se indicó en
+                                el reporte anterior) se ha estandarizado y miniaturizado. Ahora se está instalando de
+                                serie en drones de ataque ligeros "Molniya" utilizando canales de 5 vatios (1300-1500
+                                MHz). Esto permite que cada dron actúe como repetidor de señal para los demás, creando
+                                una red de control dinámica y unificada que elimina las zonas muertas de comunicación y
+                                enlaza diferentes tipos de municiones merodeadoras.</li>
+                        </ul>
 
-  <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
-  <p><strong>Tácticas de Engaño Electrónico en Redes Mesh (Rusia):</strong> Más allá de la navegación autónoma para evadir inhibidores reportada hace 12 horas, se ha detectado que las fuerzas rusas están probando nuevas tácticas de engaño electrónico en el campo de batalla. Están emparejando los nuevos módems MESH de sus drones con transmisores de video analógicos falsos. El objetivo de esta prueba no oficial es confundir a los operadores de Guerra Electrónica (EW) ucranianos, haciéndoles creer que están interceptando o interfiriendo una señal estándar vulnerable, mientras el dron mantiene intacta su conexión digital encriptada a través de la red de malla.</p>
+                        <h3>Actores al Margen de la Ley</h3>
+                        <p><strong>Cárteles Mexicanos (Escuadrón de Drones del CJNG y Desplazamientos
+                                Forzados):</strong> La evolución táctica del Cártel de Jalisco Nueva Generación (CJNG)
+                            reportada anteriormente (bombardeos en alfombra y FPVs) ha culminado en la formalización de
+                            una unidad paramilitar especializada llamada "Operadores de Drones". En las últimas horas,
+                            se ha confirmado que el uso de enjambres de drones cargados con explosivos C4 y metralla ha
+                            provocado el desplazamiento forzado de decenas de familias en Badiraguato, Sinaloa (bastión
+                            histórico del Cártel de Sinaloa). Además, el uso de drones por parte de los cárteles ha
+                            saturado la frontera con EE. UU., con más de 34,000 vuelos detectados recientemente para
+                            labores de vigilancia, escolta de coyotes y contrabando, superando la capacidad de
+                            mitigación de las autoridades fronterizas.</p>
 
-  <h3>Fuentes Consultadas</h3>
-  <ul>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDJBUVV3rbToLzTjcgTBs34KxHAgOCzqAz79Ql4Cb_48Kh_34MLrdcR8zLCBoMdYhuav_v-P_n5Ag2fHDwOzxP3FH1XGxrWInR04mEryn8TD7Lndq13cGkqBQqtRIubajH8aPGXe5svO47_tv0AfroXQq8NVLt2wMLVEwHPpMZpNONFfif60B-mLTGJd3ZL-um-iR1s2sl8tz52szOfJsLmeYsqx2lAfR4r6Iu">Anadolu Agency: Hezbollah says it targeted military sites in central, northern Israel</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEb4RRVetsxWs-ErTzedOQfDXSN2p8Hyoi03S38Bctkk2RDYYL0u9-yEkBYX5lkyfzV8QrarLusxa9x2pVadx-IUC04pNmpZ88Y-MCVOXZIpR-voDeP2FBtA19LnS4bCkCVRrFLzcUek8J5FXf5COFoEHbDIh8mxWbkAZY0MDXZj6fBgzaAqwojfcxLzakxt1jt5OFDAnBRlTm0BMp4LIQsUrDV4CQqlLV9tlzc6rg=">Middle East Monitor: Hezbollah claims drone swarm attack on military base in northern Israel</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERErUyn9xa92eobTtH-5QpwQBD8i-pfTbMSL_IO0qjQkyr47f64sqLF3zIGCOovkgaPGxjbLtlUJhhRQ_W6i1qPpBTsOoo8_CUZMNxQzxzb-kfdbrhm5B5SYe7IZHUAWGZCocXkmG742uhODNofdUE4Zzn0VOtS1lPWOxoOkcJv4i33okPdXKqApgCoaNXT8Wusak-vBgo11VXSOo8vAsImfeRWrCovTrPd95zEqawVz_i7m_ztPg=">Forbes: Ukraine's Sea Drones Are Now Launching Unjammable Fiber-Optic Drones</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZYYd_jUSeV47sXgBVg1t2gqQD2Y9wTitexxqtPUqdiX3L6xlhyJpNXiNpYrEwjeWRl3ZSqIvAQ8DIjdFWeMWtu4dDdHGFbyrhO4htZ0AHZz75WjVKkOYRp-1eczAeQWligujfXqp15S2OMOKQ4oP0gi5sK9hrHU7ZgudMZSSOAKkRDNTfrcuBAYH1RmzyEjMnhAgiXINgSlZzmOz3D67RcRnF">Business Insider: Ukrainian Firm Making New Unjammable Drone With 100-Kilometer Reach</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNCFKabkNhreunmfrOsgdvuKDZpBviy_G-UgN48LIgPvoo36_lDgKu4ED1qxlBUmD7PQK3pBh-ZxmN7zXt3S2TwdB9ZUHOLf9NtC2jBAAWqDBVQoqX3EvXzIfdyKmAIvxVH22sTXWylm7H8ym033YrvOQDCWSyD6xOYPWVbAWhPJcuUJR0q03eF9Oz9LPEUcd7b99xiwfnUXsisWAa3TQdtoN9LRErlzUBTKCTvJ6oePyyHYueA5fyHRkIbuk=">Euromaidan Press: Russia built an invisible web of Shahed relay towers in Belarus — Ukraine just tore it down</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgk07KlClumnFhPmR2meDY3agRBr90CyUIWj0CyV1UOnX2CA8dbTDDOiSiDzE1INM8GAQUimzI7JwpWpJBSux18hh5JUQcVCslBFwwpjPQo5TiboMmpBog642zVmpGd95BD8d8i_K71FSt0hAx_P57mwFh3TFLPqieacJ7KPaqTF1P9RNOaSj73XluPrHO2fYDkslhta-74CSopqO6SXztmuID-GZU_kYFFLONueqZ">Defense Express: russia Expands Mesh Modem Integration to Drones, Now Equipping Molniya UAVs</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmsDJOzTHdmtAwQjJkKEqSKw0empoa4lqUqyi-XezR15VlwRjQg95gipWE2BbpwxPca61oQETpawP45SkuL2mHAROGCmwlZbQA5mX8_QPIBzsw2pCLeMWaa91wRdgbdSssx_FecQPCJR8XE-_Rmrl1NUXO3IlsrSHa6CHbcko8uQtzBio4IrCmXJ-EAbCFVmDQt-NSBn4emQ==">CBS News: Hometown of notorious cartel leader "El Chapo" hit by drone attacks, forcing residents to flee</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFephHoYYowmnzSZMzkd80ygHv_pWyLNM-YgrPMv-3CrsoorB5eFmLNENM7TVA9_5JF5U9CqOpYFpbdBuhWzJ5HSUQ1mjAZOCCPED689n6QfBSQjDOzfsYfmfcOvjl08zE40GCHtwjQy-biVKSr8hOw7h_wNy0AFgV8mPOqh0lD1sJGXLuMlhpYm7jm-pwutG2SAqj3Pj0WxCK-9pc=">CSIS: Illicit Innovation: Latin America Is Not Prepared to Fight Criminal Drones</a></li>
-  </ul>
-</div>
+                        <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
+                        <p><strong>Tácticas de Engaño Electrónico en Redes Mesh (Rusia):</strong> Más allá de la
+                            navegación autónoma para evadir inhibidores reportada hace 12 horas, se ha detectado que las
+                            fuerzas rusas están probando nuevas tácticas de engaño electrónico en el campo de batalla.
+                            Están emparejando los nuevos módems MESH de sus drones con transmisores de video analógicos
+                            falsos. El objetivo de esta prueba no oficial es confundir a los operadores de Guerra
+                            Electrónica (EW) ucranianos, haciéndoles creer que están interceptando o interfiriendo una
+                            señal estándar vulnerable, mientras el dron mantiene intacta su conexión digital encriptada
+                            a través de la red de malla.</p>
+
+                        <h3>Fuentes Consultadas</h3>
+                        <ul>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDJBUVV3rbToLzTjcgTBs34KxHAgOCzqAz79Ql4Cb_48Kh_34MLrdcR8zLCBoMdYhuav_v-P_n5Ag2fHDwOzxP3FH1XGxrWInR04mEryn8TD7Lndq13cGkqBQqtRIubajH8aPGXe5svO47_tv0AfroXQq8NVLt2wMLVEwHPpMZpNONFfif60B-mLTGJd3ZL-um-iR1s2sl8tz52szOfJsLmeYsqx2lAfR4r6Iu">Anadolu
+                                    Agency: Hezbollah says it targeted military sites in central, northern Israel</a>
+                            </li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEb4RRVetsxWs-ErTzedOQfDXSN2p8Hyoi03S38Bctkk2RDYYL0u9-yEkBYX5lkyfzV8QrarLusxa9x2pVadx-IUC04pNmpZ88Y-MCVOXZIpR-voDeP2FBtA19LnS4bCkCVRrFLzcUek8J5FXf5COFoEHbDIh8mxWbkAZY0MDXZj6fBgzaAqwojfcxLzakxt1jt5OFDAnBRlTm0BMp4LIQsUrDV4CQqlLV9tlzc6rg=">Middle
+                                    East Monitor: Hezbollah claims drone swarm attack on military base in northern
+                                    Israel</a></li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERErUyn9xa92eobTtH-5QpwQBD8i-pfTbMSL_IO0qjQkyr47f64sqLF3zIGCOovkgaPGxjbLtlUJhhRQ_W6i1qPpBTsOoo8_CUZMNxQzxzb-kfdbrhm5B5SYe7IZHUAWGZCocXkmG742uhODNofdUE4Zzn0VOtS1lPWOxoOkcJv4i33okPdXKqApgCoaNXT8Wusak-vBgo11VXSOo8vAsImfeRWrCovTrPd95zEqawVz_i7m_ztPg=">Forbes:
+                                    Ukraine's Sea Drones Are Now Launching Unjammable Fiber-Optic Drones</a></li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZYYd_jUSeV47sXgBVg1t2gqQD2Y9wTitexxqtPUqdiX3L6xlhyJpNXiNpYrEwjeWRl3ZSqIvAQ8DIjdFWeMWtu4dDdHGFbyrhO4htZ0AHZz75WjVKkOYRp-1eczAeQWligujfXqp15S2OMOKQ4oP0gi5sK9hrHU7ZgudMZSSOAKkRDNTfrcuBAYH1RmzyEjMnhAgiXINgSlZzmOz3D67RcRnF">Business
+                                    Insider: Ukrainian Firm Making New Unjammable Drone With 100-Kilometer Reach</a>
+                            </li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNCFKabkNhreunmfrOsgdvuKDZpBviy_G-UgN48LIgPvoo36_lDgKu4ED1qxlBUmD7PQK3pBh-ZxmN7zXt3S2TwdB9ZUHOLf9NtC2jBAAWqDBVQoqX3EvXzIfdyKmAIvxVH22sTXWylm7H8ym033YrvOQDCWSyD6xOYPWVbAWhPJcuUJR0q03eF9Oz9LPEUcd7b99xiwfnUXsisWAa3TQdtoN9LRErlzUBTKCTvJ6oePyyHYueA5fyHRkIbuk=">Euromaidan
+                                    Press: Russia built an invisible web of Shahed relay towers in Belarus — Ukraine
+                                    just tore it down</a></li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEgk07KlClumnFhPmR2meDY3agRBr90CyUIWj0CyV1UOnX2CA8dbTDDOiSiDzE1INM8GAQUimzI7JwpWpJBSux18hh5JUQcVCslBFwwpjPQo5TiboMmpBog642zVmpGd95BD8d8i_K71FSt0hAx_P57mwFh3TFLPqieacJ7KPaqTF1P9RNOaSj73XluPrHO2fYDkslhta-74CSopqO6SXztmuID-GZU_kYFFLONueqZ">Defense
+                                    Express: russia Expands Mesh Modem Integration to Drones, Now Equipping Molniya
+                                    UAVs</a></li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmsDJOzTHdmtAwQjJkKEqSKw0empoa4lqUqyi-XezR15VlwRjQg95gipWE2BbpwxPca61oQETpawP45SkuL2mHAROGCmwlZbQA5mX8_QPIBzsw2pCLeMWaa91wRdgbdSssx_FecQPCJR8XE-_Rmrl1NUXO3IlsrSHa6CHbcko8uQtzBio4IrCmXJ-EAbCFVmDQt-NSBn4emQ==">CBS
+                                    News: Hometown of notorious cartel leader "El Chapo" hit by drone attacks, forcing
+                                    residents to flee</a></li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFephHoYYowmnzSZMzkd80ygHv_pWyLNM-YgrPMv-3CrsoorB5eFmLNENM7TVA9_5JF5U9CqOpYFpbdBuhWzJ5HSUQ1mjAZOCCPED689n6QfBSQjDOzfsYfmfcOvjl08zE40GCHtwjQy-biVKSr8hOw7h_wNy0AFgV8mPOqh0lD1sJGXLuMlhpYm7jm-pwutG2SAqj3Pj0WxCK-9pc=">CSIS:
+                                    Illicit Innovation: Latin America Is Not Prepared to Fight Criminal Drones</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-<!-- MR_REPORT_CARD_START -->
+            <!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 04-Mar-2026 02:31 UTC</div>
                 <div class="content">
                     <div class="report-section">
-  <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
-  <p><strong>Medio Oriente y Golfo Pérsico (Escalada a "Operation Epic Fury"):</strong> El estancamiento táctico reportado hace 12 horas en el sector de Bint Jbeil ha derivado en una escalada regional masiva. Hezbolá ha descentralizado su mando y abierto un nuevo frente, lanzando enjambres de drones y cohetes hacia Haifa (Israel) por primera vez en 18 meses, superando la guerra de túneles local. Simultáneamente, la "Operación Tridente Abierto" en Ormuz ha sido subsumida por la <strong>"Operation Epic Fury"</strong>. Estados Unidos ha bombardeado más de 1,700 objetivos en Irán. Esta intensidad ha provocado una alerta crítica en la Armada de EE.UU. por el rápido agotamiento de sus reservas de misiles Tomahawk y SM, lo que plantea vulnerabilidades estratégicas a largo plazo frente a otros teatros de operaciones.</p>
-  
-  <p><strong>Guerra Rusia-Ucrania (El Fin de la Guerra Electrónica Tradicional):</strong> La ventaja ucraniana con el sistema visual "Odin-Eye" reportada anteriormente ha acelerado una transición definitiva: la Guerra Electrónica (EW) está perdiendo su dominancia absoluta. Ante el uso masivo de drones con fibra óptica y navegación inercial que son inmunes a las interferencias de microondas como el "Volna-Z", las fuerzas ucranianas han comenzado a desplegar sistemas de <strong>intercepción cinética automatizada</strong>, marcando el fin de la dependencia exclusiva de los inhibidores de señal.</p>
+                        <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
+                        <p><strong>Medio Oriente y Golfo Pérsico (Escalada a "Operation Epic Fury"):</strong> El
+                            estancamiento táctico reportado hace 12 horas en el sector de Bint Jbeil ha derivado en una
+                            escalada regional masiva. Hezbolá ha descentralizado su mando y abierto un nuevo frente,
+                            lanzando enjambres de drones y cohetes hacia Haifa (Israel) por primera vez en 18 meses,
+                            superando la guerra de túneles local. Simultáneamente, la "Operación Tridente Abierto" en
+                            Ormuz ha sido subsumida por la <strong>"Operation Epic Fury"</strong>. Estados Unidos ha
+                            bombardeado más de 1,700 objetivos en Irán. Esta intensidad ha provocado una alerta crítica
+                            en la Armada de EE.UU. por el rápido agotamiento de sus reservas de misiles Tomahawk y SM,
+                            lo que plantea vulnerabilidades estratégicas a largo plazo frente a otros teatros de
+                            operaciones.</p>
 
-  <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
-  <ul>
-    <li><strong>Dron Interceptor "Strila" con SineLink (Ucrania):</strong> La empresa WIY Drones ha desplegado una versión mejorada de su dron anti-Shahed. Alcanza los 400 km/h y utiliza el sistema de comunicación <em>SineLink</em>, permitiendo operar sin GPS y cambiar de canal en pleno vuelo. Posee guiado terminal autónomo mediante reconocimiento óptico y de radar para compensar errores de navegación.</li>
-    <li><strong>Cúpula Cinética Autónoma "I-SEE" (Ucrania):</strong> Un nuevo sistema de torreta automatizada impulsada por IA diseñada para crear un "domo" protector sobre blindados pesados. Detecta, rastrea y destruye cinéticamente drones enemigos (incluidos los de fibra óptica), devolviendo la capacidad de maniobra a los tanques que antes debían esconderse de los FPV.</li>
-    <li><strong>LUCAS (Low-cost Uncrewed Combat Attack System) (EE.UU.):</strong> Desplegado por primera vez en la "Operation Epic Fury" contra Irán. Son drones de ataque de bajo costo diseñados para imitar la firma de los drones Shahed iraníes, saturando y confundiendo las defensas aéreas enemigas.</li>
-  </ul>
+                        <p><strong>Guerra Rusia-Ucrania (El Fin de la Guerra Electrónica Tradicional):</strong> La
+                            ventaja ucraniana con el sistema visual "Odin-Eye" reportada anteriormente ha acelerado una
+                            transición definitiva: la Guerra Electrónica (EW) está perdiendo su dominancia absoluta.
+                            Ante el uso masivo de drones con fibra óptica y navegación inercial que son inmunes a las
+                            interferencias de microondas como el "Volna-Z", las fuerzas ucranianas han comenzado a
+                            desplegar sistemas de <strong>intercepción cinética automatizada</strong>, marcando el fin
+                            de la dependencia exclusiva de los inhibidores de señal.</p>
 
-  <h3>Actores al Margen de la Ley</h3>
-  <p><strong>Cártel de Jalisco Nueva Generación (CJNG) y Tácticas de Tierra Arrasada:</strong> Tras la reciente muerte de su líder "El Mencho", el CJNG ha evolucionado drásticamente más allá de los drones agrícolas reportados hace 12 horas. Reportes de inteligencia confirman que el cártel está aplicando tácticas observadas en Ucrania: han comenzado a realizar "bombardeos en alfombra" sobre zonas rurales de Michoacán para desplazar a la población civil y a cárteles rivales. Además, han introducido sistemas de caída de múltiples municiones y están experimentando con <strong>drones FPV controlados por fibra óptica</strong> para evadir los inhibidores de señal del ejército mexicano.</p>
+                        <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
+                        <ul>
+                            <li><strong>Dron Interceptor "Strila" con SineLink (Ucrania):</strong> La empresa WIY Drones
+                                ha desplegado una versión mejorada de su dron anti-Shahed. Alcanza los 400 km/h y
+                                utiliza el sistema de comunicación <em>SineLink</em>, permitiendo operar sin GPS y
+                                cambiar de canal en pleno vuelo. Posee guiado terminal autónomo mediante reconocimiento
+                                óptico y de radar para compensar errores de navegación.</li>
+                            <li><strong>Cúpula Cinética Autónoma "I-SEE" (Ucrania):</strong> Un nuevo sistema de torreta
+                                automatizada impulsada por IA diseñada para crear un "domo" protector sobre blindados
+                                pesados. Detecta, rastrea y destruye cinéticamente drones enemigos (incluidos los de
+                                fibra óptica), devolviendo la capacidad de maniobra a los tanques que antes debían
+                                esconderse de los FPV.</li>
+                            <li><strong>LUCAS (Low-cost Uncrewed Combat Attack System) (EE.UU.):</strong> Desplegado por
+                                primera vez en la "Operation Epic Fury" contra Irán. Son drones de ataque de bajo costo
+                                diseñados para imitar la firma de los drones Shahed iraníes, saturando y confundiendo
+                                las defensas aéreas enemigas.</li>
+                        </ul>
 
-  <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
-  <p><strong>Redes Mesh Autónomas en Drones Shahed (Rusia):</strong> Se ha detectado a las fuerzas rusas probando algoritmos de "redes mesh" (malla) en enjambres de drones kamikaze. Durante lanzamientos masivos, si un dron detecta que ha entrado en una zona de fuerte interferencia electrónica (EW) o defensa antiaérea, el sistema registra automáticamente la amenaza y redirige al resto del enjambre por rutas seguras alternativas sin ninguna intervención de un operador humano.</p>
+                        <h3>Actores al Margen de la Ley</h3>
+                        <p><strong>Cártel de Jalisco Nueva Generación (CJNG) y Tácticas de Tierra Arrasada:</strong>
+                            Tras la reciente muerte de su líder "El Mencho", el CJNG ha evolucionado drásticamente más
+                            allá de los drones agrícolas reportados hace 12 horas. Reportes de inteligencia confirman
+                            que el cártel está aplicando tácticas observadas en Ucrania: han comenzado a realizar
+                            "bombardeos en alfombra" sobre zonas rurales de Michoacán para desplazar a la población
+                            civil y a cárteles rivales. Además, han introducido sistemas de caída de múltiples
+                            municiones y están experimentando con <strong>drones FPV controlados por fibra
+                                óptica</strong> para evadir los inhibidores de señal del ejército mexicano.</p>
 
-  <h3>Fuentes Consultadas</h3>
-  <ul>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNydG9Fr5N4epeoUysdrLbm508ndU1xr5DaN_LcgXNc5vnEwtn2jRPT9ScOREHkj6rLMT_rpQhNl4QI5mZjQgdiqON_NZyG2iYMovOSxx4kX5jp43aDbtugzgHkrPY54BOyczYYqg_HoBLkM7dNzJYbQ==">Ukrainska Pravda: "Moving towards an autonomous interceptor": Ukrainian company WIY upgrades Strila drone</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7CUQAv0rQR-JG9ExQJoSEVjZPbu20kG3d0t-uYXAQ5k8z0nBJdAi5j0znLc7aDhrYFQRNCSc0WfzF7QiesrSD3yjbqaBUlrpz1t7ZtqaeVpyHFefoM0ERVn8NJv-dv2T8CC9Kktq4mUwKzaEcieT-GWfXUx7uoIYxS6a2IOereqLfCwpORsfZNR4uz9rOGEmd1C1cnZA0kA2jJ3bH6D7fZhR3E-CviOtWM0WyaM0zzYQSrtM35Q==">TechUkraine: The End of Electronic Warfare? How I-SEE is Building the Future of Kinetic Drone Defense</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRBPrDTH0O81N43f9ZA53rCg3Q4p69jTwCx24tXEpXnByyXUvO2W9xXEeE1a4vmzhny18xr5yaZAa6Py-Hc4dR9VLUc2HJPY4klOyYHi7hII890FL9rYjD-fBX6AZ2CKx1kH2IzJbiqGwoDcRCY8dT_qgLxeZneDBtUqG6qEx6dYCU_myVjdM=">Substack (Drone Warfare): Mesh Networks and EW Trends in Ukraine</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWDvKF5lTDQ2Ltbu8sxSZ5rOTz3GSsDYuyty_oEf8KZYUXII6SjXhG1Xsk2mAx4BIHuu4mV6biLWIvCLFH034-vM5wcH7DsBcfBh9LYglXfAzTRKRqit-okkxKjIleBiNQWhBWh98UF0uv5yZy3PEJEz66uc3liurn_lZMogiF-tLV-_pZ-fDXgVCFShZU9cs739xcWazM1TGIcRF3qaKfMTV5fueJDkIJqb9Z5C_35lRUUdiUgWJLRM1MAr-O">Breaking Defense: Iran mission takes toll on US munition stockpile (Operation Epic Fury)</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2psdU-Ho5HoZT0-4j-k7XGp0Jg0O9MzIe-QfzjZHILlQA5GSuwk3dpxwY6gLa2J1B654V7juu9Oo3ff1dlKMzO9eC5bROgMIGkvOiAdwRBehB8wbUucYJCEbQHijkfx-Hq2SzRkqcimCghovWN9RxK0MJuSkthJ50PmzzxPolH_4QQdFx-nr-t7EFu4EI-3R_4yfi0epU">IISS: The US-Israel campaign in Iran</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6iU0ZrrAqRzTD1yhyP7rKuA5t5GTXWfwhwmeMuyzacRXHUrlISmAu62i7JMiXuhX2NJW_8q6IxQNsvYL2osLfA7bJnrqq0JCwHQQUT3QKDoZh-dtFN7c4XAumIbZ1tqUmCxzwGzSZzVh8nbnNr2FcQNwL24AQjbc8ZLHu">DroneXL / Wired en Español: CJNG's Tech Arsenal: How Drones, AI, And TikTok Kept Mexico's Most Dangerous Cartel Running</a></li>
-    <li><a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzd_2em03faYaXOQyj6T5npXTMcm8bouiTRyNlz0xgRY7mDIMr-_QybrPCN8SKVpK04R6MEQ4gIRDMrTAEfPFoX5IMptR2W1Sf-QuYMRsZQNbYmm15VawSUfVxLhI2jo_KmF_bUu_ogJ7fH9td-2wftxqf7J3E2xK4uiVb8HLTSSvmUrwjt5o=">Small Wars Journal: Mapping Weaponized Drone Attacks Attributed to Mexican Drug Cartels</a></li>
-  </ul>
-</div>
+                        <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
+                        <p><strong>Redes Mesh Autónomas en Drones Shahed (Rusia):</strong> Se ha detectado a las fuerzas
+                            rusas probando algoritmos de "redes mesh" (malla) en enjambres de drones kamikaze. Durante
+                            lanzamientos masivos, si un dron detecta que ha entrado en una zona de fuerte interferencia
+                            electrónica (EW) o defensa antiaérea, el sistema registra automáticamente la amenaza y
+                            redirige al resto del enjambre por rutas seguras alternativas sin ninguna intervención de un
+                            operador humano.</p>
+
+                        <h3>Fuentes Consultadas</h3>
+                        <ul>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNydG9Fr5N4epeoUysdrLbm508ndU1xr5DaN_LcgXNc5vnEwtn2jRPT9ScOREHkj6rLMT_rpQhNl4QI5mZjQgdiqON_NZyG2iYMovOSxx4kX5jp43aDbtugzgHkrPY54BOyczYYqg_HoBLkM7dNzJYbQ==">Ukrainska
+                                    Pravda: "Moving towards an autonomous interceptor": Ukrainian company WIY upgrades
+                                    Strila drone</a></li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7CUQAv0rQR-JG9ExQJoSEVjZPbu20kG3d0t-uYXAQ5k8z0nBJdAi5j0znLc7aDhrYFQRNCSc0WfzF7QiesrSD3yjbqaBUlrpz1t7ZtqaeVpyHFefoM0ERVn8NJv-dv2T8CC9Kktq4mUwKzaEcieT-GWfXUx7uoIYxS6a2IOereqLfCwpORsfZNR4uz9rOGEmd1C1cnZA0kA2jJ3bH6D7fZhR3E-CviOtWM0WyaM0zzYQSrtM35Q==">TechUkraine:
+                                    The End of Electronic Warfare? How I-SEE is Building the Future of Kinetic Drone
+                                    Defense</a></li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRBPrDTH0O81N43f9ZA53rCg3Q4p69jTwCx24tXEpXnByyXUvO2W9xXEeE1a4vmzhny18xr5yaZAa6Py-Hc4dR9VLUc2HJPY4klOyYHi7hII890FL9rYjD-fBX6AZ2CKx1kH2IzJbiqGwoDcRCY8dT_qgLxeZneDBtUqG6qEx6dYCU_myVjdM=">Substack
+                                    (Drone Warfare): Mesh Networks and EW Trends in Ukraine</a></li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWDvKF5lTDQ2Ltbu8sxSZ5rOTz3GSsDYuyty_oEf8KZYUXII6SjXhG1Xsk2mAx4BIHuu4mV6biLWIvCLFH034-vM5wcH7DsBcfBh9LYglXfAzTRKRqit-okkxKjIleBiNQWhBWh98UF0uv5yZy3PEJEz66uc3liurn_lZMogiF-tLV-_pZ-fDXgVCFShZU9cs739xcWazM1TGIcRF3qaKfMTV5fueJDkIJqb9Z5C_35lRUUdiUgWJLRM1MAr-O">Breaking
+                                    Defense: Iran mission takes toll on US munition stockpile (Operation Epic Fury)</a>
+                            </li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2psdU-Ho5HoZT0-4j-k7XGp0Jg0O9MzIe-QfzjZHILlQA5GSuwk3dpxwY6gLa2J1B654V7juu9Oo3ff1dlKMzO9eC5bROgMIGkvOiAdwRBehB8wbUucYJCEbQHijkfx-Hq2SzRkqcimCghovWN9RxK0MJuSkthJ50PmzzxPolH_4QQdFx-nr-t7EFu4EI-3R_4yfi0epU">IISS:
+                                    The US-Israel campaign in Iran</a></li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6iU0ZrrAqRzTD1yhyP7rKuA5t5GTXWfwhwmeMuyzacRXHUrlISmAu62i7JMiXuhX2NJW_8q6IxQNsvYL2osLfA7bJnrqq0JCwHQQUT3QKDoZh-dtFN7c4XAumIbZ1tqUmCxzwGzSZzVh8nbnNr2FcQNwL24AQjbc8ZLHu">DroneXL
+                                    / Wired en Español: CJNG's Tech Arsenal: How Drones, AI, And TikTok Kept Mexico's
+                                    Most Dangerous Cartel Running</a></li>
+                            <li><a
+                                    href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzd_2em03faYaXOQyj6T5npXTMcm8bouiTRyNlz0xgRY7mDIMr-_QybrPCN8SKVpK04R6MEQ4gIRDMrTAEfPFoX5IMptR2W1Sf-QuYMRsZQNbYmm15VawSUfVxLhI2jo_KmF_bUu_ogJ7fH9td-2wftxqf7J3E2xK4uiVb8HLTSSvmUrwjt5o=">Small
+                                    Wars Journal: Mapping Weaponized Drone Attacks Attributed to Mexican Drug
+                                    Cartels</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-<!-- MR_REPORT_CARD_START -->
+            <!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 03-Mar-2026 13:16 UTC</div>
                 <div class="content">
                     <div class="report-section">
-    <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
-    <p><strong>Medio Oriente (Contraofensiva Asimétrica):</strong> Tras el inicio de la invasión terrestre reportada hace 12 horas, la situación en el sur del Líbano ha mutado rápidamente hacia una guerra de túneles de alta intensidad. Mientras el reporte anterior confirmaba el cruce de divisiones blindadas israelíes, la inteligencia actual indica que el avance se ha estancado en el sector de Bint Jbeil. Hezbolá ha activado lo que denominan "Defensa de Enjambre Subterráneo", utilizando drones FPV cableados (inmunes a las interferencias estándar) que emergen de pozos ocultos a la retaguardia de los tanques Merkava, buscando saturar los sistemas de protección activa Trophy.</p>
-    
-    <p><strong>Crisis del Estrecho de Ormuz (Respuesta de la Coalición):</strong> En respuesta directa al minado y cierre del estrecho por parte de Irán (mencionado en el informe previo), Estados Unidos y Reino Unido han lanzado la "Operación Tridente Abierto". A diferencia de la defensa pasiva con láseres HELIOS reportada anteriormente, la coalición ha pasado a la ofensiva de limpieza, desplegando por primera vez enjambres de UUVs (Vehículos Submarinos No Tripulados) de clase <em>Remus 620</em> modificados para neutralizar las minas inteligentes iraníes mediante cargas de cavitación, intentando reabrir el corredor energético antes del cierre de los mercados asiáticos.</p>
+                        <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
+                        <p><strong>Medio Oriente (Contraofensiva Asimétrica):</strong> Tras el inicio de la invasión
+                            terrestre reportada hace 12 horas, la situación en el sur del Líbano ha mutado rápidamente
+                            hacia una guerra de túneles de alta intensidad. Mientras el reporte anterior confirmaba el
+                            cruce de divisiones blindadas israelíes, la inteligencia actual indica que el avance se ha
+                            estancado en el sector de Bint Jbeil. Hezbolá ha activado lo que denominan "Defensa de
+                            Enjambre Subterráneo", utilizando drones FPV cableados (inmunes a las interferencias
+                            estándar) que emergen de pozos ocultos a la retaguardia de los tanques Merkava, buscando
+                            saturar los sistemas de protección activa Trophy.</p>
 
-    <p><strong>Guerra Rusia-Ucrania (Adaptación a la Guerra Electrónica):</strong> La ventaja táctica rusa obtenida hace 6 horas mediante el sistema de microondas "Volna-Z" ha sido contestada con rapidez sorprendente. Unidades ucranianas de la brigada "Magyar Birds" han comenzado a desplegar drones con el nuevo software de navegación visual "Odin-Eye". Esta tecnología permite a los drones desconectarse del operador humano al detectar la interferencia del "Volna-Z" y continuar el ataque de forma totalmente autónoma utilizando reconocimiento de imagen para identificar la silueta térmica de los emisores de microondas rusos, convirtiendo la defensa rusa en su propio blanco.</p>
+                        <p><strong>Crisis del Estrecho de Ormuz (Respuesta de la Coalición):</strong> En respuesta
+                            directa al minado y cierre del estrecho por parte de Irán (mencionado en el informe previo),
+                            Estados Unidos y Reino Unido han lanzado la "Operación Tridente Abierto". A diferencia de la
+                            defensa pasiva con láseres HELIOS reportada anteriormente, la coalición ha pasado a la
+                            ofensiva de limpieza, desplegando por primera vez enjambres de UUVs (Vehículos Submarinos No
+                            Tripulados) de clase <em>Remus 620</em> modificados para neutralizar las minas inteligentes
+                            iraníes mediante cargas de cavitación, intentando reabrir el corredor energético antes del
+                            cierre de los mercados asiáticos.</p>
 
-    <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
-    <ul>
-        <li><strong>Munición Merodeadora "Cazador de Sonido":</strong> En el frente del Donbás, se ha confirmado el primer uso operativo del sistema polaco <em>Gezim-X</em> por parte de fuerzas especiales ucranianas. A diferencia de los drones visuales, este sistema se guía exclusivamente por firmas acústicas. Ha sido utilizado en las últimas horas para triangular y destruir posiciones de artillería rusa basándose únicamente en el estruendo de sus disparos, operando eficazmente bajo condiciones de niebla densa que impedían el uso de drones ópticos convencionales.</li>
-        <li><strong>Camuflaje Térmico Adaptativo (Metamateriales):</strong> Imágenes satelitales y reportes de campo sugieren que las unidades de élite Radwan de Hezbolá están utilizando capas de camuflaje de metamateriales de origen desconocido (posiblemente prototipos chinos o iraníes). Estas capas no solo ocultan la firma infrarroja del combatiente, sino que imitan la temperatura del entorno circundante en tiempo real, haciendo que los soldados sean prácticamente invisibles para las miras térmicas de los francotiradores y drones israelíes durante la noche.</li>
-    </ul>
+                        <p><strong>Guerra Rusia-Ucrania (Adaptación a la Guerra Electrónica):</strong> La ventaja
+                            táctica rusa obtenida hace 6 horas mediante el sistema de microondas "Volna-Z" ha sido
+                            contestada con rapidez sorprendente. Unidades ucranianas de la brigada "Magyar Birds" han
+                            comenzado a desplegar drones con el nuevo software de navegación visual "Odin-Eye". Esta
+                            tecnología permite a los drones desconectarse del operador humano al detectar la
+                            interferencia del "Volna-Z" y continuar el ataque de forma totalmente autónoma utilizando
+                            reconocimiento de imagen para identificar la silueta térmica de los emisores de microondas
+                            rusos, convirtiendo la defensa rusa en su propio blanco.</p>
 
-    <h3>Actores al Margen de la Ley</h3>
-    <p><strong>Cártel de Jalisco Nueva Generación (CJNG) y Artillería Aérea:</strong> Inteligencia mexicana ha reportado un salto cualitativo en Michoacán. Abandonando los drones comerciales con explosivos pegados, el CJNG ha desplegado drones agrícolas de gran porte (tipo Agras T40 modificados) equipados con un sistema de liberación de morteros de 60mm impreso en 3D con estabilización giroscópica. Esta "artillería aérea" ha permitido al cártel realizar bombardeos de precisión sobre cuarteles de la Guardia Nacional desde una altura de 500 metros, fuera del alcance del fuego de fusilería estándar.</p>
+                        <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
+                        <ul>
+                            <li><strong>Munición Merodeadora "Cazador de Sonido":</strong> En el frente del Donbás, se
+                                ha confirmado el primer uso operativo del sistema polaco <em>Gezim-X</em> por parte de
+                                fuerzas especiales ucranianas. A diferencia de los drones visuales, este sistema se guía
+                                exclusivamente por firmas acústicas. Ha sido utilizado en las últimas horas para
+                                triangular y destruir posiciones de artillería rusa basándose únicamente en el estruendo
+                                de sus disparos, operando eficazmente bajo condiciones de niebla densa que impedían el
+                                uso de drones ópticos convencionales.</li>
+                            <li><strong>Camuflaje Térmico Adaptativo (Metamateriales):</strong> Imágenes satelitales y
+                                reportes de campo sugieren que las unidades de élite Radwan de Hezbolá están utilizando
+                                capas de camuflaje de metamateriales de origen desconocido (posiblemente prototipos
+                                chinos o iraníes). Estas capas no solo ocultan la firma infrarroja del combatiente, sino
+                                que imitan la temperatura del entorno circundante en tiempo real, haciendo que los
+                                soldados sean prácticamente invisibles para las miras térmicas de los francotiradores y
+                                drones israelíes durante la noche.</li>
+                        </ul>
 
-    <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
-    <p><strong>Pruebas de Enjambre "Loyal Wingman" (Turquía):</strong> Aprovechando operaciones antiterroristas en el norte de Irak en las últimas 8 horas, la Fuerza Aérea Turca parece estar probando en combate real la integración de su dron supersónico <em>Kizilelma</em> actuando como líder de escuadrón para drones menores <em>Alpagu</em>. Los reportes de inteligencia señalan que el <em>Kizilelma</em> designó objetivos y los drones menores ejecutaron el ataque de forma coordinada sin intervención humana directa, validando algoritmos de "mente de colmena" en un entorno de combate real no simulado.</p>
+                        <h3>Actores al Margen de la Ley</h3>
+                        <p><strong>Cártel de Jalisco Nueva Generación (CJNG) y Artillería Aérea:</strong> Inteligencia
+                            mexicana ha reportado un salto cualitativo en Michoacán. Abandonando los drones comerciales
+                            con explosivos pegados, el CJNG ha desplegado drones agrícolas de gran porte (tipo Agras T40
+                            modificados) equipados con un sistema de liberación de morteros de 60mm impreso en 3D con
+                            estabilización giroscópica. Esta "artillería aérea" ha permitido al cártel realizar
+                            bombardeos de precisión sobre cuarteles de la Guardia Nacional desde una altura de 500
+                            metros, fuera del alcance del fuego de fusilería estándar.</p>
 
-    <h3>Fuentes Consultadas</h3>
-    <ul>
-        <li><a href="https://www.janes.com/defence-news/news-detail/hezbollah-tunnel-tactics-stall-idf-advance-bint-jbeil-2026">Janes Defence: Hezbollah's new tunnel-drone tactics stall IDF advance</a></li>
-        <li><a href="https://www.navalnews.com/naval-news/2026/03/us-navy-deploys-remus-swarms-hormuz/">Naval News: Operation Open Trident - US Navy counters Iranian mines with AI swarms</a></li>
-        <li><a href="https://www.kyivindependent.com/tech/ukraine-counters-russian-ew-visual-navigation-ai">Kyiv Independent: 'Odin-Eye' AI allows Ukrainian drones to hunt Russian jammers</a></li>
-        <li><a href="https://www.borderlandbeat.com/2026/03/cjng-heavy-lift-drones-mortar-attacks.html">Borderland Beat: CJNG escalates with heavy-lift bomber drones in Michoacán</a></li>
-        <li><a href="https://www.defenceturkey.com/en/content/kizilelma-combat-trial-northern-iraq-swarm-coordination">Defence Turkey: Unofficial combat debut of Kizilelma swarm logic in N. Iraq</a></li>
-    </ul>
-</div>
+                        <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
+                        <p><strong>Pruebas de Enjambre "Loyal Wingman" (Turquía):</strong> Aprovechando operaciones
+                            antiterroristas en el norte de Irak en las últimas 8 horas, la Fuerza Aérea Turca parece
+                            estar probando en combate real la integración de su dron supersónico <em>Kizilelma</em>
+                            actuando como líder de escuadrón para drones menores <em>Alpagu</em>. Los reportes de
+                            inteligencia señalan que el <em>Kizilelma</em> designó objetivos y los drones menores
+                            ejecutaron el ataque de forma coordinada sin intervención humana directa, validando
+                            algoritmos de "mente de colmena" en un entorno de combate real no simulado.</p>
+
+                        <h3>Fuentes Consultadas</h3>
+                        <ul>
+                            <li><a
+                                    href="https://www.janes.com/defence-news/news-detail/hezbollah-tunnel-tactics-stall-idf-advance-bint-jbeil-2026">Janes
+                                    Defence: Hezbollah's new tunnel-drone tactics stall IDF advance</a></li>
+                            <li><a
+                                    href="https://www.navalnews.com/naval-news/2026/03/us-navy-deploys-remus-swarms-hormuz/">Naval
+                                    News: Operation Open Trident - US Navy counters Iranian mines with AI swarms</a>
+                            </li>
+                            <li><a
+                                    href="https://www.kyivindependent.com/tech/ukraine-counters-russian-ew-visual-navigation-ai">Kyiv
+                                    Independent: 'Odin-Eye' AI allows Ukrainian drones to hunt Russian jammers</a></li>
+                            <li><a
+                                    href="https://www.borderlandbeat.com/2026/03/cjng-heavy-lift-drones-mortar-attacks.html">Borderland
+                                    Beat: CJNG escalates with heavy-lift bomber drones in Michoacán</a></li>
+                            <li><a
+                                    href="https://www.defenceturkey.com/en/content/kizilelma-combat-trial-northern-iraq-swarm-coordination">Defence
+                                    Turkey: Unofficial combat debut of Kizilelma swarm logic in N. Iraq</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-<!-- MR_REPORT_CARD_START -->
+            <!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 03-Mar-2026 02:40 UTC</div>
                 <div class="content">
                     <div class="report-section">
-    <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
-    <p><strong>Medio Oriente (Invasión Terrestre y Bloqueo Naval):</strong> En una escalada dramática respecto al reporte de hace 12 horas, que se limitaba a intercambios aéreos, las Fuerzas de Defensa de Israel (FDI) han iniciado la <strong>fase terrestre</strong> de su ofensiva. Divisiones blindadas han cruzado la Línea Azul hacia el sur del Líbano bajo la cobertura de fuego de artillería pesado, enfrentándose a emboscadas de unidades de élite Radwan de Hezbolá. Simultáneamente, en respuesta a la "Operación Epic Fury", la Guardia Revolucionaria de Irán ha anunciado el <strong>cierre del Estrecho de Ormuz</strong>, desplegando minas marinas inteligentes y lanchas rápidas no tripuladas, lo que ha disparado el precio del crudo en los mercados asiáticos en las últimas horas.</p>
-    
-    <p><strong>Guerra Rusia-Ucrania (Contraataque Electrónico):</strong> Mientras el reporte anterior destacaba el dominio de los drones FPV ucranianos, la situación ha cambiado en el sector de Avdiivka en las últimas 6 horas. Rusia ha desplegado por primera vez unidades móviles equipadas con el sistema experimental "Volna-Z", un emisor de microondas de alta potencia diseñado específicamente para freír la electrónica de los drones, incluso aquellos con fibra óptica (atacando los receptores terminales), logrando romper temporalmente el cerco de drones ucranianos y permitiendo un avance de 2 km de sus columnas blindadas.</p>
+                        <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
+                        <p><strong>Medio Oriente (Invasión Terrestre y Bloqueo Naval):</strong> En una escalada
+                            dramática respecto al reporte de hace 12 horas, que se limitaba a intercambios aéreos, las
+                            Fuerzas de Defensa de Israel (FDI) han iniciado la <strong>fase terrestre</strong> de su
+                            ofensiva. Divisiones blindadas han cruzado la Línea Azul hacia el sur del Líbano bajo la
+                            cobertura de fuego de artillería pesado, enfrentándose a emboscadas de unidades de élite
+                            Radwan de Hezbolá. Simultáneamente, en respuesta a la "Operación Epic Fury", la Guardia
+                            Revolucionaria de Irán ha anunciado el <strong>cierre del Estrecho de Ormuz</strong>,
+                            desplegando minas marinas inteligentes y lanchas rápidas no tripuladas, lo que ha disparado
+                            el precio del crudo en los mercados asiáticos en las últimas horas.</p>
 
-    <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
-    <ul>
-        <li><strong>Láseres de Alta Energía (HEL) en Combate Naval:</strong> En respuesta al cierre del Estrecho de Ormuz, el destructor USS Preble ha confirmado el primer uso exitoso en combate real del sistema <strong>HELIOS (High Energy Laser with Integrated Optical-dazzler and Surveillance)</strong>. A diferencia de los interceptores cinéticos tradicionales, el sistema láser logró neutralizar un enjambre de 6 drones suicidas iraníes Shahed-136 a un costo por disparo cercano a cero, marcando un hito operativo respecto a las pruebas teóricas de años anteriores.</li>
-        <li><strong>Minas Antitanque "Saltadoras" con IA:</strong> En el frente ucraniano, se ha detectado el uso de la mina PTKM-2R de nueva generación por parte de Rusia. A diferencia de los modelos estáticos, este dispositivo utiliza sensores acústicos y sísmicos para identificar el tipo de vehículo objetivo y lanza una sub-munición al aire que ataca el blindaje superior (la parte más débil) del tanque. La novedad radica en su red neuronal, que le permite distinguir entre vehículos amigos y enemigos sin intervención humana.</li>
-    </ul>
+                        <p><strong>Guerra Rusia-Ucrania (Contraataque Electrónico):</strong> Mientras el reporte
+                            anterior destacaba el dominio de los drones FPV ucranianos, la situación ha cambiado en el
+                            sector de Avdiivka en las últimas 6 horas. Rusia ha desplegado por primera vez unidades
+                            móviles equipadas con el sistema experimental "Volna-Z", un emisor de microondas de alta
+                            potencia diseñado específicamente para freír la electrónica de los drones, incluso aquellos
+                            con fibra óptica (atacando los receptores terminales), logrando romper temporalmente el
+                            cerco de drones ucranianos y permitiendo un avance de 2 km de sus columnas blindadas.</p>
 
-    <h3>Actores al Margen de la Ley</h3>
-    <p><strong>Houthis y Torpedos Merodeadores:</strong> Mientras el reporte previo se centraba en los cárteles mexicanos y Hezbolá, la inteligencia naval ha detectado una nueva amenaza en el Mar Rojo. Los rebeldes hutíes han desplegado por primera vez <strong>Vehículos Submarinos No Tripulados (UUV)</strong> de fabricación artesanal pero con componentes de guía avanzados (presumiblemente iraníes). Estos "torpedos merodeadores" pueden permanecer inactivos en el lecho marino hasta detectar la firma acústica de un buque comercial específico, momento en el que se activan para impactar en la línea de flotación, complicando extremadamente la defensa marítima que hasta ahora se centraba en amenazas aéreas.</p>
+                        <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
+                        <ul>
+                            <li><strong>Láseres de Alta Energía (HEL) en Combate Naval:</strong> En respuesta al cierre
+                                del Estrecho de Ormuz, el destructor USS Preble ha confirmado el primer uso exitoso en
+                                combate real del sistema <strong>HELIOS (High Energy Laser with Integrated
+                                    Optical-dazzler and Surveillance)</strong>. A diferencia de los interceptores
+                                cinéticos tradicionales, el sistema láser logró neutralizar un enjambre de 6 drones
+                                suicidas iraníes Shahed-136 a un costo por disparo cercano a cero, marcando un hito
+                                operativo respecto a las pruebas teóricas de años anteriores.</li>
+                            <li><strong>Minas Antitanque "Saltadoras" con IA:</strong> En el frente ucraniano, se ha
+                                detectado el uso de la mina PTKM-2R de nueva generación por parte de Rusia. A diferencia
+                                de los modelos estáticos, este dispositivo utiliza sensores acústicos y sísmicos para
+                                identificar el tipo de vehículo objetivo y lanza una sub-munición al aire que ataca el
+                                blindaje superior (la parte más débil) del tanque. La novedad radica en su red neuronal,
+                                que le permite distinguir entre vehículos amigos y enemigos sin intervención humana.
+                            </li>
+                        </ul>
 
-    <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
-    <p><strong>Test de Armas Hipersónicas de Corto Alcance (China):</strong> Aprovechando la distracción global en Medio Oriente, satélites de reconocimiento han detectado actividad inusual en el desierto de Gobi que coincide con reportes de inteligencia sobre el despliegue de un nuevo misil hipersónico táctico de corto alcance (alcance < 500km) por parte del Ejército Popular de Liberación (PLA). Analistas sugieren que China está realizando pruebas de fuego real simulando ataques contra grupos de portaaviones, validando sistemas de maniobra terminal que nunca antes se habían visto fuera de simulaciones por ordenador.</p>
+                        <h3>Actores al Margen de la Ley</h3>
+                        <p><strong>Houthis y Torpedos Merodeadores:</strong> Mientras el reporte previo se centraba en
+                            los cárteles mexicanos y Hezbolá, la inteligencia naval ha detectado una nueva amenaza en el
+                            Mar Rojo. Los rebeldes hutíes han desplegado por primera vez <strong>Vehículos Submarinos No
+                                Tripulados (UUV)</strong> de fabricación artesanal pero con componentes de guía
+                            avanzados (presumiblemente iraníes). Estos "torpedos merodeadores" pueden permanecer
+                            inactivos en el lecho marino hasta detectar la firma acústica de un buque comercial
+                            específico, momento en el que se activan para impactar en la línea de flotación, complicando
+                            extremadamente la defensa marítima que hasta ahora se centraba en amenazas aéreas.</p>
 
-    <h3>Fuentes Consultadas</h3>
-    <ul>
-        <li><a href="https://www.aljazeera.com/news/liveblog/2026/3/3/israel-lebanon-war-live-ground-troops-cross-border">Al Jazeera: Israel launches ground invasion into southern Lebanon</a></li>
-        <li><a href="https://www.defensenews.com/naval/2026/03/03/uss-preble-laser-weapon-combat-debut/">Defense News: USS Preble’s HELIOS laser scores first combat kills in Hormuz</a></li>
-        <li><a href="https://www.reuters.com/world/middle-east/iran-threatens-strait-hormuz-closure-oil-spikes-2026-03-03/">Reuters: Oil surges as Iran mines Strait of Hormuz in retaliation</a></li>
-        <li><a href="https://www.thewarzone.com/houthi-underwater-drones-new-threat-red-sea">The War Zone: The Houthi UUV Threat: Loitering Torpedoes Detected</a></li>
-        <li><a href="https://www.understandingwar.org/backgrounder/russian-offensive-campaign-assessment-march-3-2026">ISW: Russian Offensive Campaign Assessment - New EW Systems in Avdiivka</a></li>
-    </ul>
-</div>
+                        <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
+                        <p><strong>Test de Armas Hipersónicas de Corto Alcance (China):</strong> Aprovechando la
+                            distracción global en Medio Oriente, satélites de reconocimiento han detectado actividad
+                            inusual en el desierto de Gobi que coincide con reportes de inteligencia sobre el despliegue
+                            de un nuevo misil hipersónico táctico de corto alcance (alcance < 500km) por parte del
+                                Ejército Popular de Liberación (PLA). Analistas sugieren que China está realizando
+                                pruebas de fuego real simulando ataques contra grupos de portaaviones, validando
+                                sistemas de maniobra terminal que nunca antes se habían visto fuera de simulaciones por
+                                ordenador.</p>
+
+                                <h3>Fuentes Consultadas</h3>
+                                <ul>
+                                    <li><a
+                                            href="https://www.aljazeera.com/news/liveblog/2026/3/3/israel-lebanon-war-live-ground-troops-cross-border">Al
+                                            Jazeera: Israel launches ground invasion into southern Lebanon</a></li>
+                                    <li><a
+                                            href="https://www.defensenews.com/naval/2026/03/03/uss-preble-laser-weapon-combat-debut/">Defense
+                                            News: USS Preble’s HELIOS laser scores first combat kills in Hormuz</a></li>
+                                    <li><a
+                                            href="https://www.reuters.com/world/middle-east/iran-threatens-strait-hormuz-closure-oil-spikes-2026-03-03/">Reuters:
+                                            Oil surges as Iran mines Strait of Hormuz in retaliation</a></li>
+                                    <li><a
+                                            href="https://www.thewarzone.com/houthi-underwater-drones-new-threat-red-sea">The
+                                            War Zone: The Houthi UUV Threat: Loitering Torpedoes Detected</a></li>
+                                    <li><a
+                                            href="https://www.understandingwar.org/backgrounder/russian-offensive-campaign-assessment-march-3-2026">ISW:
+                                            Russian Offensive Campaign Assessment - New EW Systems in Avdiivka</a></li>
+                                </ul>
+                    </div>
                 </div>
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-<!-- MR_REPORT_CARD_START -->
+            <!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 02-Mar-2026 17:16 UTC</div>
                 <div class="content">
@@ -556,5 +1031,75 @@
             <!-- MR_REPORTS_END -->
         </div>
     </div>
+    <script>
+        function updateTimestamps() {
+            const elements = document.querySelectorAll('.timestamp');
+            const now = new Date();
+
+            elements.forEach(el => {
+                if (!el.dataset.originalTime) {
+                    const text = el.textContent;
+                    const match = text.match(/REPORTE GENERADO:\s*([^<]+)/);
+                    if (match && match[1]) {
+                        // Sometimes the match could include previously appended "(hace...)", 
+                        // but since we only do this once per element (guarded by dataset.originalTime),
+                        // and the server doesn't save the JS-modified DOM, the base text is clean.
+                        let timeStr = match[1].trim();
+                        // Strip out any existing "(hace...)" just in case
+                        timeStr = timeStr.replace(/\s*\(hace.*\)$/, '');
+
+                        el.dataset.originalTime = timeStr;
+                        // Base text should also not have any "(hace...)"
+                        el.dataset.baseText = text.replace(/\s*\(hace.*\)$/, '').trim();
+                    }
+                }
+
+                if (el.dataset.originalTime) {
+                    const reportDate = new Date(el.dataset.originalTime);
+                    if (!isNaN(reportDate)) {
+                        const diffMs = now - reportDate;
+                        if (diffMs < 0) return; // if report is somehow in the future
+
+                        let diffMins = Math.floor(diffMs / 60000);
+                        let diffHours = Math.floor(diffMins / 60);
+                        const diffDays = Math.floor(diffHours / 24);
+
+                        diffHours = diffHours % 24;
+                        diffMins = diffMins % 60;
+
+                        let timeParts = [];
+                        if (diffDays > 0) {
+                            timeParts.push(diffDays + ' día' + (diffDays !== 1 ? 's' : ''));
+                        }
+                        if (diffHours > 0) {
+                            timeParts.push(diffHours + ' hora' + (diffHours !== 1 ? 's' : ''));
+                        }
+                        if (diffMins > 0) {
+                            timeParts.push(diffMins + ' minuto' + (diffMins !== 1 ? 's' : ''));
+                        }
+
+                        let relativeTime = '';
+                        if (timeParts.length === 0) {
+                            relativeTime = 'hace unos segundos';
+                        } else if (timeParts.length === 1) {
+                            relativeTime = 'hace ' + timeParts[0];
+                        } else if (timeParts.length === 2) {
+                            relativeTime = 'hace ' + timeParts[0] + ' y ' + timeParts[1];
+                        } else if (timeParts.length === 3) {
+                            relativeTime = 'hace ' + timeParts[0] + ', ' + timeParts[1] + ' y ' + timeParts[2];
+                        }
+
+                        el.textContent = el.dataset.baseText + ' (' + relativeTime + ')';
+                    }
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateTimestamps();
+            setInterval(updateTimestamps, 60000);
+        });
+    </script>
 </body>
+
 </html>

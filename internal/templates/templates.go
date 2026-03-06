@@ -171,5 +171,74 @@ const BaseHTML = `<!DOCTYPE html>
             <!-- MR_REPORTS_END -->
         </div>
     </div>
+    <script>
+        function updateTimestamps() {
+            const elements = document.querySelectorAll('.timestamp');
+            const now = new Date();
+
+            elements.forEach(el => {
+                if (!el.dataset.originalTime) {
+                    const text = el.textContent;
+                    const match = text.match(/REPORTE GENERADO:\s*([^<]+)/);
+                    if (match && match[1]) {
+                        // Sometimes the match could include previously appended "(hace...)", 
+                        // but since we only do this once per element (guarded by dataset.originalTime),
+                        // and the server doesn't save the JS-modified DOM, the base text is clean.
+                        let timeStr = match[1].trim();
+                        // Strip out any existing "(hace...)" just in case
+                        timeStr = timeStr.replace(/\s*\(hace.*\)$/, '');
+                        
+                        el.dataset.originalTime = timeStr;
+                        // Base text should also not have any "(hace...)"
+                        el.dataset.baseText = text.replace(/\s*\(hace.*\)$/, '').trim();
+                    }
+                }
+
+                if (el.dataset.originalTime) {
+                    const reportDate = new Date(el.dataset.originalTime);
+                    if (!isNaN(reportDate)) {
+                        const diffMs = now - reportDate;
+                        if (diffMs < 0) return; // if report is somehow in the future
+
+                        let diffMins = Math.floor(diffMs / 60000);
+                        let diffHours = Math.floor(diffMins / 60);
+                        const diffDays = Math.floor(diffHours / 24);
+
+                        diffHours = diffHours % 24;
+                        diffMins = diffMins % 60;
+
+                        let timeParts = [];
+                        if (diffDays > 0) {
+                            timeParts.push(diffDays + ' día' + (diffDays !== 1 ? 's' : ''));
+                        }
+                        if (diffHours > 0) {
+                            timeParts.push(diffHours + ' hora' + (diffHours !== 1 ? 's' : ''));
+                        }
+                        if (diffMins > 0) {
+                            timeParts.push(diffMins + ' minuto' + (diffMins !== 1 ? 's' : ''));
+                        }
+
+                        let relativeTime = '';
+                        if (timeParts.length === 0) {
+                            relativeTime = 'hace unos segundos';
+                        } else if (timeParts.length === 1) {
+                            relativeTime = 'hace ' + timeParts[0];
+                        } else if (timeParts.length === 2) {
+                            relativeTime = 'hace ' + timeParts[0] + ' y ' + timeParts[1];
+                        } else if (timeParts.length === 3) {
+                            relativeTime = 'hace ' + timeParts[0] + ', ' + timeParts[1] + ' y ' + timeParts[2];
+                        }
+
+                        el.textContent = el.dataset.baseText + ' (' + relativeTime + ')';
+                    }
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateTimestamps();
+            setInterval(updateTimestamps, 60000);
+        });
+    </script>
 </body>
 </html>`
