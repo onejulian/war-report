@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +7,14 @@
     <title>WAR Monitor - Inteligencia Geopolítica</title>
     <style>
         :root {
-            --bg-body: #0f172a;
-            /* Slate 900 */
-            --bg-card: #1e293b;
-            /* Slate 800 */
-            --text-main: #f1f5f9;
-            /* Slate 100 */
-            --text-muted: #94a3b8;
-            /* Slate 400 */
-            --border: #334155;
-            /* Slate 700 */
-            --accent: #38bdf8;
-            /* Sky 400 */
+            --bg-body: #0f172a;       /* Slate 900 */
+            --bg-card: #1e293b;       /* Slate 800 */
+            --text-main: #f1f5f9;     /* Slate 100 */
+            --text-muted: #94a3b8;    /* Slate 400 */
+            --border: #334155;        /* Slate 700 */
+            --accent: #38bdf8;        /* Sky 400 */
             --accent-glow: rgba(56, 189, 248, 0.15);
-            --success: #34d399;
-            /* Emerald 400 */
+            --success: #34d399;       /* Emerald 400 */
             --font-main: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
         }
 
@@ -88,9 +80,7 @@
         .report-card::before {
             content: "";
             position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
+            left: 0; top: 0; bottom: 0;
             width: 4px;
             background: var(--accent);
             opacity: 0.8;
@@ -121,7 +111,7 @@
             display: flex;
             align-items: center;
         }
-
+        
         .content h3::before {
             content: "▹";
             margin-right: 8px;
@@ -138,65 +128,92 @@
             text-decoration: none;
             transition: color 0.2s ease;
         }
-
+        
         .content a:hover {
-            color: #bae6fd;
+            color: #bae6fd; 
             text-decoration: underline;
         }
 
         .content strong {
-            color: var(--success);
-            /* Resalta datos clave en verde */
+            color: var(--success); /* Resalta datos clave en verde */
             font-weight: 600;
         }
-
+        
         /* Diagnóstico final destacado */
         .content p:last-child strong {
-            color: #fbbf24;
-            /* Amber para la conclusion */
+            color: #fbbf24; /* Amber para la conclusion */
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* Mobile */
         @media (max-width: 600px) {
-            body {
-                padding: 12px;
-            }
-
-            .header h1 {
-                font-size: 1.5rem;
-            }
-
-            .report-card {
-                padding: 20px;
-                border-radius: 12px;
-            }
+            body { padding: 12px; }
+            .header h1 { font-size: 1.5rem; }
+            .report-card { padding: 20px; border-radius: 12px; }
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <div class="header">
             <h1>WAR Monitor 2026</h1>
             <p>Análisis de Riesgos Geopolíticos &amp; Tecnológicos Estratégicos</p>
         </div>
-
+        
         <div id="archive">
             <!-- MR_REPORTS_START -->
 
             <!-- MR_REPORT_CARD_START -->
+            <div class="report-card">
+                <div class="timestamp">REPORTE GENERADO: 07-Mar-2026 02:25 UTC</div>
+                <div class="content">
+                    <div class="report-section">
+  <h3>Estado de los Principales Conflictos (Últimas 12h)</h3>
+  <p><strong>Medio Oriente (Israel-Líbano):</strong> En comparativa con el reporte anterior, que destacaba las órdenes de evacuación y las 26 oleadas de ataques en Beirut, la situación ha escalado a una catástrofe humanitaria sin precedentes. En las últimas 12 horas, los bombardeos israelíes se han intensificado brutalmente sobre el distrito oriental de Baalbek (con al menos 12 ataques recientes que dejaron múltiples víctimas). Cientos de miles de desplazados duermen ahora en las calles y playas de Beirut. Como consecuencia directa de esta presión bélica, el gobierno libanés ha prohibido oficialmente las actividades militares de Hezbolá, marcando un punto de quiebre político interno histórico.</p>
+  
+  <p><strong>Guerra EE. UU./Israel - Irán (Operación Epic Fury):</strong> Si hace 12 horas el foco era el costo económico de la operación ($3.700 millones) y su sostenibilidad, la novedad actual radica en la destrucción estratégica y el cambio de régimen. EE. UU. ha logrado una degradación severa de los activos navales iraníes (destruyendo 17 buques de guerra, incluido un submarino clave) y ha establecido el control efectivo del espacio aéreo hasta Teherán. Además, la operación ha pasado a una fase política: tras la muerte del Líder Supremo Alí Jamenei, se reporta que EE. UU. está en conversaciones directas con líderes kurdos para impulsar una rebelión interna que fracture definitivamente al régimen.</p>
+
+  <h3>Innovación en el Campo de Batalla (Armamento y Tácticas)</h3>
+  <ul>
+    <li><strong>Torreta Autónoma "Bullfrog" (Expansión Terrestre):</strong> A diferencia del reporte anterior que limitaba su uso a drones marítimos, la novedad de las últimas horas es que el Laboratorio de Aplicaciones del Ejército de EE. UU. (AAL) ha otorgado un contrato de 1.5 millones de dólares a Allen Control Systems para integrar esta torreta de IA en los cinco vehículos de combate terrestres más desplegados del ejército. Esto transforma la defensa antidrones, permitiendo protección autónoma en movimiento continuo.</li>
+    <li><strong>Dron Interceptor "Bullet":</strong> Presentado recientemente en Alemania por Archon Defense y la ucraniana Degree Trans LLC. Es un dron táctico modular que alcanza los 450 km/h, diseñado específicamente a partir de la retroalimentación del combate en Ucrania para interceptar drones tipo Shahed y destruir sistemas de defensa aérea enemigos.</li>
+    <li><strong>Misil de Crucero Checo "Narwhal":</strong> Praga ha confirmado el envío a Ucrania de este nuevo misil de largo alcance (680 km) para pruebas en combate real. Su innovación táctica radica en su arquitectura de navegación, que combina guía inercial con coincidencia visual del terreno, haciéndolo virtualmente inmune a las severas interferencias GPS rusas.</li>
+  </ul>
+
+  <h3>Actores al Margen de la Ley</h3>
+  <p><strong>Cártel de Jalisco Nueva Generación (CJNG) y Tácticas Militares:</strong> Tras la reciente muerte de su líder "El Mencho" (quien estaba protegido por un ejército privado y drones bombarderos), inteligencia mexicana ha revelado una preocupante transferencia de tácticas de guerra estatal al narcotráfico. Miembros del CJNG viajaron a Ucrania haciéndose pasar por voluntarios extranjeros en la Legión Internacional para recibir entrenamiento militar avanzado en operación de drones y tácticas de guerrilla urbana.</p>
+  <p><strong>Fuerzas Hutíes y Tecnología de Hidrógeno:</strong> Aunque han reducido sus ataques a buques comerciales, los hutíes se han convertido en el primer actor no estatal a nivel mundial en intentar utilizar celdas de combustible de hidrógeno en sistemas no tripulados (UAVs), tras la intercepción de componentes en la frontera con Omán. Además, han comenzado a reivindicar el uso de misiles balísticos hipersónicos "Palestine-2" (Fattah-1 modificados) hacia Israel.</p>
+
+  <h3>Laboratorios de Guerra (Pruebas No Oficiales)</h3>
+  <p><strong>Sistema Láser "Sunray" (Ucrania):</strong> Ingenieros ucranianos están probando en el campo de batalla un prototipo de arma láser de bajo costo. Montado en camionetas pickup, el sistema emite un haz concentrado, silencioso e invisible que quema la estructura de los drones kamikaze en segundos. Ha sido desarrollado como una alternativa económica y de despliegue rápido ante la escasez de misiles interceptores tradicionales.</p>
+  <p><strong>Defensa Antidrones de "Cables Giratorios" (Rusia):</strong> El 70º Regimiento de Fusileros Motorizados de Rusia ha comenzado a probar un sistema experimental en la región ocupada de Zaporiyia. Consiste en un vehículo robótico terrestre equipado con cables que giran a alta velocidad, creando una barrera mecánica "estilo ventilador" diseñada para golpear o desviar drones FPV antes del impacto.</p>
+  <p><strong>Pruebas Láser JIATF-401 (EE. UU.):</strong> El Pentágono y la FAA están llevando a cabo pruebas conjuntas de armas láser de alta energía contra enjambres de drones en el polígono de misiles de White Sands (Nuevo México) durante este 7 y 8 de marzo de 2026. El objetivo es probar en un entorno controlado los protocolos de apagado automático y seguridad ocular para su futura integración en el espacio aéreo nacional.</p>
+
+  <h3>Fuentes Consultadas</h3>
+  <ul>
+    <li><a href="https://www.channelnewsasia.com/world/israel-intensifies-strikes-lebanon-major-raids-east-4175371">Channel News Asia: Israel intensifies strikes on Lebanon with major raids on east</a></li>
+    <li><a href="https://www.whitehouse.gov/briefing-room/statements-releases/2026/03/05/americas-unstoppable-momentum-in-operation-epic-fury/">The White House: America's Unstoppable Momentum in Operation Epic Fury</a></li>
+    <li><a href="https://acleddata.com/2026/03/05/middle-east-special-issue-march-2026/">ACLED: Middle East Special Issue - March 2026</a></li>
+    <li><a href="https://cuashub.com/en/content/allen-control-systems-secures-u-s-army-contract-for-bullfrog-autonomous-weapon-station-integration/">C-UAS Hub: Allen Control Systems secures U.S. Army contract for Bullfrog autonomous weapon station integration</a></li>
+    <li><a href="https://www.armyrecognition.com/news/aerospace-news/2026/ukraine-reveals-bullet-interceptor-drone-to-target-shahed-drones-and-air-defense-systems">Army Recognition: Ukraine reveals Bullet interceptor drone to target Shahed drones</a></li>
+    <li><a href="https://euromaidanpress.com/2025/12/29/frontline-report-why-the-czech-narwhal-missile-could-become-ukraines-secret-weapon-in-2026/">Euromaidan Press: Why the Czech Narwhal missile could become Ukraine's secret weapon in 2026</a></li>
+    <li><a href="https://euvsdisinfo.eu/report/ukraine-supplies-weapons-to-mexican-drug-cartel-and-trains-it-in-drone-operations">EU vs Disinfo: Ukraine supplies weapons to Mexican drug cartel and trains it in drone operations</a></li>
+    <li><a href="https://www.fdd.org/analysis/2025/03/26/advanced-weapons-for-houthis-intercepted-at-oman-yemen-border/">FDD: Advanced Weapons for Houthis Intercepted at Oman-Yemen Border</a></li>
+    <li><a href="https://aeromorning.com/en/ukraine-develops-sunray-laser-system-to-counter-drones/">AeroMorning: Ukraine Develops Sunray Laser System to Counter Drones</a></li>
+    <li><a href="https://united24media.com/latest-news/russia-tests-experimental-rotating-cable-system-against-ukrainian-drones-4112">United24 Media: Russia Tests Experimental “Rotating Cable” System Against Ukrainian Drones</a></li>
+    <li><a href="https://www.eurasiareview.com/06032026-jiatf-401-faa-to-conduct-advanced-counter-drone-laser-test-at-white-sands-missile-range/">Eurasia Review: JIATF-401, FAA To Conduct Advanced Counter-Drone Laser Test At White Sands Missile Range</a></li>
+  </ul>
+</div>
+                </div>
+            </div>
+            <!-- MR_REPORT_CARD_END -->
+    
+
+<!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 06-Mar-2026 13:08 UTC</div>
                 <div class="content">
@@ -285,8 +302,7 @@
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-
-            <!-- MR_REPORT_CARD_START -->
+<!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 06-Mar-2026 02:32 UTC</div>
                 <div class="content">
@@ -377,7 +393,7 @@
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-            <!-- MR_REPORT_CARD_START -->
+<!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 05-Mar-2026 13:13 UTC</div>
                 <div class="content">
@@ -459,7 +475,7 @@
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-            <!-- MR_REPORT_CARD_START -->
+<!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 05-Mar-2026 02:34 UTC</div>
                 <div class="content">
@@ -564,7 +580,7 @@
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-            <!-- MR_REPORT_CARD_START -->
+<!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 04-Mar-2026 13:08 UTC</div>
                 <div class="content">
@@ -670,7 +686,7 @@
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-            <!-- MR_REPORT_CARD_START -->
+<!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 04-Mar-2026 02:31 UTC</div>
                 <div class="content">
@@ -765,7 +781,7 @@
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-            <!-- MR_REPORT_CARD_START -->
+<!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 03-Mar-2026 13:16 UTC</div>
                 <div class="content">
@@ -858,7 +874,7 @@
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-            <!-- MR_REPORT_CARD_START -->
+<!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 03-Mar-2026 02:40 UTC</div>
                 <div class="content">
@@ -943,7 +959,7 @@
             </div>
             <!-- MR_REPORT_CARD_END -->
 
-            <!-- MR_REPORT_CARD_START -->
+<!-- MR_REPORT_CARD_START -->
             <div class="report-card">
                 <div class="timestamp">REPORTE GENERADO: 02-Mar-2026 17:16 UTC</div>
                 <div class="content">
@@ -1047,7 +1063,7 @@
                         let timeStr = match[1].trim();
                         // Strip out any existing "(hace...)" just in case
                         timeStr = timeStr.replace(/\s*\(hace.*\)$/, '');
-
+                        
                         el.dataset.originalTime = timeStr;
                         // Base text should also not have any "(hace...)"
                         el.dataset.baseText = text.replace(/\s*\(hace.*\)$/, '').trim();
@@ -1101,5 +1117,4 @@
         });
     </script>
 </body>
-
 </html>
